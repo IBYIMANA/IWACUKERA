@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav className=" shadow-lg  text-black flex flex-col lg:flex-row items-center justify-between py-4 px-8 lg:pr-40 lg:pl-40 ">
+    <nav className="fixed top-0 w-full bg-white shadow-lg z-10 py-4 px-8 lg:pr-40 lg:pl-40 flex flex-col lg:flex-row items-center justify-between">
       <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-0">
         <img src="../public/logo.jpg" alt="image1" className="h-10" />
       </div>
@@ -13,7 +13,6 @@ const NavBar = () => {
         <NavLink to={'/practical'} className="nav-link">Practical-Information</NavLink>
         <NavLink to={'/media'} className="nav-link">Media</NavLink>
         <NavLink to={'/events'} className="nav-link">Events</NavLink>
-        
       </div>
     </nav>
   );

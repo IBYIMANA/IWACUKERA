@@ -1,20 +1,29 @@
-import React from 'react'
+// NavBar.jsx
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const NavBar = () => {
+  const [showHistoryLinks, setShowHistoryLinks] = useState(false);
+
+  const handleHistoryClick = () => {
+    setShowHistoryLinks(!showHistoryLinks);
+  };
+
   return (
-    <div>
-         <nav className='fixed flex items-center justify-between w-full h-20 ml-12 text-white bg-black'>
-        <ul className="flex mr-3 space-x-4">
-          <li><a href="/" className="font-extrabold text-white ">Home</a></li>
-          <li><a href="/Course" className="font-extrabold text-white ">Course</a></li>
-          <li><a href="/History" className="font-extrabold text-white ">History</a></li>
-          <li><a href="/Events" className="font-extrabold text-white ">Events</a></li>
-          <li><a href="/Contact" className="font-extrabold text-white ">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-   
-  )
-}
+    <nav className="top-0 w-full bg-white shadow-lg z-10 py-4 px-8 lg:pr-40 lg:pl-40 flex flex-col lg:flex-row items-center justify-between">
+      <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-0">
+        <img src="../public/logo.jpg" alt="image1" className="h-10" />
+      </div>
+      <div className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-end space-x-4">
+        <NavLink to={'/'} className="nav-link">Home</NavLink>
+        <NavLink to={'/history'} className="nav-link" onClick={handleHistoryClick}>History</NavLink>
+        <NavLink to={'/practical'} className="nav-link">Practical-Information</NavLink>
+        <NavLink to={'/media'} className="nav-link">Media</NavLink>
+        <NavLink to={'/events'} className="nav-link">Events</NavLink>
+      </div>
+     
+    </nav>
+  );
+};
 
-export default Navbar
+export default NavBar;

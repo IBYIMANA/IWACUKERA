@@ -10,11 +10,11 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="top-0 w-full fixed bg-white shadow-lg z-10 py-4 px-8 lg:pr-40 lg:pl-40 flex flex-col lg:flex-row items-center justify-between">
-      <div className="flex items-center justify-center lg:justify-start mb-4 lg:mb-0">
+    <nav className="fixed top-0 z-10 flex flex-col items-center justify-between w-full px-8 py-4 bg-white shadow-lg lg:pr-40 lg:pl-40 lg:flex-row">
+      <div className="flex items-center justify-center mb-4 lg:justify-start lg:mb-0">
         <img src="../public/logo.jpg" alt="image1" className="h-10" />
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-end space-x-4">
+      <div className="flex flex-wrap items-center justify-center space-x-4 lg:flex-nowrap lg:justify-end">
         <NavLink to={'/'} className="nav-link">Home</NavLink>
         <NavLink to={'/history'} className="nav-link" onClick={handleHistoryClick}>History</NavLink>
         <NavLink to={'/practical'} className="nav-link">Practical-Information</NavLink>

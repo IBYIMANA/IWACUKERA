@@ -16,6 +16,7 @@ const History = () => {
         <NavLink to={'/history/imikino'} className="nav-link hover:text-neutral-400" >IMIKINO</NavLink>
         <NavLink to={'/history/imigani'} className="nav-link hover:text-neutral-400" >IMIGANI</NavLink>
       </div>
+      
     </div>
   );
 };

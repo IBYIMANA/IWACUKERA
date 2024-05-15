@@ -1,10 +1,10 @@
 import React from 'react';
-import History from './History';
+import SubNav from '../Components/SubNav';
 
 const Abami = () => {
     return (
         <div className='bg-slate-200'>
-            <History />
+            <SubNav />
             <div className='h-screen '>
                 <div className='py-40 px-6 sm:px-12 md:px-24 lg:px-36  xl:px-48 bg-slate-50 shadow-lg rounded-md h-17'>
                     <h1 className='text-4xl font-extrabold text-center text-black mb-7 pb-3'>AMATEKA Y'ABAMI B'URWANDA </h1>
@@ -171,7 +171,10 @@ const Abami = () => {
                             </table>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-12 sm:gap-16 md:gap-20 lg:gap-12 xl:gap-12'>
+                    
+                </div>
+
+                <div className='flex flex-col gap-12 sm:gap-16 md:gap-20 lg:gap-12 xl:gap-12 px-20'>
                         <div className='mt-8 bg-gray-100 shadow-lg  hover:bg-red-100 hover:scale-105 rounded-lg flex gap-5'>
                             <img src="/umwami1.jpg" alt="" className='w-1/2' />
                             <div>
@@ -221,7 +224,8 @@ const Abami = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+
+
             </div>
         </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react'
-import History from './History'
+import SubNav from '../Components/SubNav'
 const Imikino = () => {
   return (
     <div>
-<History/>
+<SubNav/>
       Activities
     </div>
   )

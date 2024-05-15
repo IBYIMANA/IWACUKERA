@@ -17,7 +17,7 @@ const Museum = () => {
           <img src="../public/King.jpg" />
           </div>
           </div>
-          <h1 className='text-4xl font-bold text-center -mt-14'>Ibikoresho byumuco</h1>
+          <h1 className='mb-5 text-4xl font-bold text-center -mt-14'>Ibikoresho by'umuco</h1>
           <div className='grid justify-around grid-cols-1 gap-10 px-4 lg:grid-cols-4 md:grid-cols-2'>
             <div className='justify-center bg-white rounded-lg shadow-lg hover:scale-105'> 
             <img src="../public/uruswo.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105"/>

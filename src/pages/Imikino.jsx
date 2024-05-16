@@ -5,7 +5,7 @@ const Imikino = () => {
     <div>
 <SubNav/>
       <div  className='px-4 py-40 md:grid-cols-1'>
-      <h1 className='mb-16 text-4xl font-extrabold text-center text-red-500'>Imikino gakondo mu Rwanda </h1>
+      <h1 className='mb-16 text-4xl font-extrabold text-center text-red-900'>Imikino gakondo mu Rwanda </h1>
       <div className='justify-center px-32 rounded-lg shadow-lg h-90 bg-red-50'>
         <div className='flex gap-8 rounded-lg shadow-lg bg-gray-50 h-90 '>
         <img src="../public/urukiramende.jpeg" alt="" className='w-1/2 px-6 pt-6 pb-6 rounded-lg shadow-lg' />

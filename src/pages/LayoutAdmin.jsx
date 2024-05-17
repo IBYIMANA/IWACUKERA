@@ -7,7 +7,9 @@ const LayoutAdmin = () => {
     <>
        <div className="flex">
       <SideBar />
-      <div className="ml-64 p-8 w-full">
+      <div className="bg-[url('../public/imigongo.jpeg')] ml-64 w-full"
+     >
+        
         <Outlet />
       </div>
     </div>

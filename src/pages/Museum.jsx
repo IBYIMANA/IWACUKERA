@@ -1,9 +1,9 @@
 import React from 'react'
-import History from './History'
+import SubNav from '../Components/SubNav'
 const Museum = () => {
   return (
     <div>
-        <History />
+        <SubNav />
         <div className='px-4 py-40 '>
           <div className='absolute px-24 py-5 mt-40 font-extrabold text-white ml-52'>
           <h1 className='text-6xl text-center '> INZU NDANGA MURANGE</h1>

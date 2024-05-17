@@ -101,7 +101,7 @@ const Admin = () => {
     <div className="flex h-screen bg-gray-300">
       <div className="fixed top-0 left-0 h-full w-64  bg-gray-200  flex flex-col py-8 px-4 shadow-lg z-10 rounded-md  text-gray-800 font-semibold">
         <div className="flex items-center justify-center mb-8">
-          <img src="../public/logo.jpg" alt="Logo" className="h-12 rounded-full" />
+          <img src="../public/logo.jpeg" alt="Logo" className="h-12  rounded-full" />
         </div>
         <nav className="flex flex-col space-y-4 justify-center items-center   rounded-md  ">
           <NavLink

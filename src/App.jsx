@@ -10,28 +10,41 @@ import Abami from './pages/Abami';
 import Imigani from './pages/Imigani';
 import Imikino from './pages/Imikino';
 import AdminLogin from './pages/AdminLogin';
-import Admin from './pages/Admin';
+import LayoutAdmin from './pages/LayoutAdmin';
+import Med from './pages/Med';
+import Proverb from './pages/Proverb';
+import Activity from './pages/Activity';
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route element={<AllPages />}>
+        {/* Routes for the main website */}
+        <Route path="/" element={<AllPages />}>
           <Route index element={<Home />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/media" element={<Media />} />
-          <Route path="/practical" element={<Practice />} />
-          <Route path="/history" element={<Museum />} />
-          <Route path="/history/museum" element={<Museum />} />
-          <Route path="/history/abami" element={<Abami />} />
-          <Route path="/history/imigani" element={<Imigani />} />
-          <Route path="/history/imikino" element={<Imikino />} />
-          <Route path="/auth/adminLogin" element={<AdminLogin />} />
+          <Route path="events" element={<Events />} />
+          <Route path="media" element={<Media />} />
+          <Route path="practical" element={<Practice />} />
+          <Route path="history" element={<Museum />} />
+          <Route path="history/museum" element={<Museum />} />
+          <Route path="history/abami" element={<Abami />} />
+          <Route path="history/imigani" element={<Imigani />} />
+          <Route path="history/imikino" element={<Imikino />} />
+          <Route path="auth/adminLogin" element={<AdminLogin />} />
         </Route>
-        <Route path="/admin/*" element={<Admin />} />
+
+        {/* Routes for the admin panel */}
+        <Route path="/admin" element={<LayoutAdmin />}>
+        <Route index element={<Dashboard />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="med" element={<Med />} />
+          <Route path="proverb" element={<Proverb />} />
+          <Route path="activity" element={<Activity />} />
+        </Route>
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

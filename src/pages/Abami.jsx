@@ -1,19 +1,27 @@
 import React from 'react';
 import SubNav from '../Components/SubNav';
-
+import { motion } from "framer-motion"
 const Abami = () => {
     return (
         <div className='bg-slate-200'>
             <SubNav />
             <div className='h-screen '>
                 <div className='py-40 px-6 sm:px-12 md:px-24 lg:px-36  xl:px-48 bg-slate-50 shadow-lg rounded-md h-17'>
-                    <h1 className='text-4xl font-extrabold text-center text-black mb-7 pb-3'>AMATEKA Y'ABAMI B'URWANDA </h1>
-                    <p className='text-center text-1xl'>U Rwanda rwagiye rutegekwa n’abami batandukanye kuva rwabaho kugeza ubwo abanyamateka babagabanyamo ibyiciro bitatu bakurikije ibihe aribyo: Abami b’ibimanuka, abami b’umushumi n’abami b’ibitekerezo.
+                    < motion.h1
+                      initial={{opacity:0,y:-100}}
+                      animate={{opacity:1,y:0}}
+                      transition={{duration:1 , delay:0.5}}
+                    className='text-4xl font-extrabold text-center text-black mb-7 pb-3'>AMATEKA Y'ABAMI B'URWANDA </motion.h1>
+                    <motion.p  initial={{opacity:0,x:-100}}
+                      animate={{opacity:1,x:0}}
+                      transition={{duration:1 , delay:0.5}}className='text-center text-1xl'>U Rwanda rwagiye rutegekwa n’abami batandukanye kuva rwabaho kugeza ubwo abanyamateka babagabanyamo ibyiciro bitatu bakurikije ibihe aribyo: Abami b’ibimanuka, abami b’umushumi n’abami b’ibitekerezo.
                         Abami b’Ibimanuka ni abakomoka kuri Shyerezo, Abami b’umushumi ni abatazwi igihe bategekeye n’ibyabaye ku Ngoma zabo, naho Abami b’Ibitekerezo ni Abami bazwi neza igihe bategekeye n’ibyabaye ku ngoma zabo.
                         Abami b’Ibimanuka bahera kuri Shyerezo bakagera kuri Kazi.
-                        Naho Abami b’umushumi bahera kuri Gihanga cyahanze Inka n’Ingoma bakagera kuri Cyilima I Rugwe. Abami b’Ibitekerezo ari nabo ba nyuma bahera kuri Kigeli I Mukobanya bakageza ku Mwami wa nyuma w’u Rwanda ariwe Kigeli V Ndahindurwa.</p>
+                        Naho Abami b’umushumi bahera kuri Gihanga cyahanze Inka n’Ingoma bakagera kuri Cyilima I Rugwe. Abami b’Ibitekerezo ari nabo ba nyuma bahera kuri Kigeli I Mukobanya bakageza ku Mwami wa nyuma w’u Rwanda ariwe Kigeli V Ndahindurwa.</motion.p>
                 </div>
-                <h1 className="text-3xl font-bold text-center text-blue-700 mb-4">Dore uko abami bategetse u Rwanda bagiye bakurikirana:</h1>
+                <motion.h1 initial={{opacity:0,x:-100}}
+                      animate={{opacity:2-onabort,x:0}}
+                      transition={{duration:1 , delay:0.5}}className="text-3xl font-bold text-center text-blue-700 mb-4">Dore uko abami bategetse u Rwanda bagiye bakurikirana:</motion.h1>
                 <div className='flex flex-col sm:flex-row gap-2 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24  sm:pr-12 sm:pl-12 md:pr-24 md:pl-24  '>
                     <div className="container mx-auto">
                         <div className="overflow-x-auto">

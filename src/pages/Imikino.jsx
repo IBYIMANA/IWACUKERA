@@ -4,19 +4,19 @@ import { motion } from 'framer-motion'
 const Imikino = () => {
   return (
     <div>
-<SubNav/>
-      <div  className='px-4 py-40 md:grid-cols-1'>
-      <motion.h1  initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 2, y: 0 }}
+      <SubNav/>
+        <div  className='px-4 py-40 md:grid-cols-1'>
+          <motion.h1  initial={{ opacity: 0, y: -100 }}
+             animate={{ opacity: 2, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-      className='mb-16 text-4xl font-extrabold text-center text-red-900'>Imikino gakondo mu Rwanda </motion.h1>
-      <div className='justify-center px-32 rounded-lg shadow-lg h-90 bg-red-50'>
-        <div className='flex gap-8 rounded-lg shadow-lg bg-gray-50 h-90 '>
-        < motion.img src="../public/urukiramende.jpeg" alt=""  initial={{ opacity: 0, x: -100 }}
+           className='mb-16 text-4xl font-extrabold text-center text-red-900'>Imikino gakondo mu Rwanda </motion.h1>
+          <div className='justify-center px-32 rounded-lg shadow-lg h-90 bg-red-50'>
+            <div className='flex gap-8 rounded-lg shadow-lg bg-gray-50 h-90 '>
+           < motion.img src="../public/urukiramende.jpeg" alt=""  initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-        className='w-1/2 px-6 pt-6 pb-6 rounded-lg shadow-lg' />
-      <div>
+              className='w-1/2 px-6 pt-6 pb-6 rounded-lg shadow-lg' />
+             <div>
         < motion.h1  initial={{ opacity: 0, x:100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}className='mt-10 mb-10 text-3xl font-bold'>URUKIRAMENDE</motion.h1>

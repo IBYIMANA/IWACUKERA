@@ -5,11 +5,11 @@ import { FaTachometerAlt, FaBook, FaCalendarAlt, FaPhotoVideo, FaSignOutAlt } fr
 const SideBar = () => {
   return (
     <div className="flex h-screen bg-gray-300">
-      <div className="fixed top-0 left-0 h-full w-64 bg-slate-300 flex flex-col py-8 px-4 shadow-lg z-10 rounded-md text-gray-800 font-semibold">
+      <div className="fixed top-0 left-0 h-full w-64 bg-black-50 flex flex-col py-8 px-4 shadow-lg z-10 rounded-md text-gray-800 font-semibold">
         <div className="flex items-center justify-center mb-8">
-          <img src="../public/logo.jpeg" alt="Logo" className="h-12 " />
+          <img src="../public/logo.png" alt="Logo"className='h-20 w-30' />
         </div>
-        <nav className="flex flex-col space-y-4 justify-center items-center rounded-md">
+        <nav className="flex flex-col space-y-4 justify-center items-center rounded-md mt-10">
           <NavLink
             to="/dashboard"
             exact="true"
@@ -59,7 +59,7 @@ const SideBar = () => {
             Media
           </NavLink>
         </nav>
-        <div className="mt-auto">
+        <div className="mt-40">
           <NavLink
             to="/logout"
             exact="true"

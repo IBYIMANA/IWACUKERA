@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className="fixed top-0 z-10 flex flex-col items-center justify-between w-full px-8 py-4 bg-gray-50 shadow-lg lg:pr-40 lg:pl-40 lg:flex-row">
       <div className="flex items-center justify-center mb-4 lg:justify-start lg:mb-0">
-        <img src="../public/logo.jpeg" alt="image1" className="h-10 w-40" />
+        <img src="../public/logo.png" alt="image1" className='h-20 w-30'/>
       </div>
       <div className="flex flex-wrap items-center font-medium text-1xl justify-center space-x-4 lg:flex-nowrap lg:justify-end">
     <NavLink to="/" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Home</NavLink>

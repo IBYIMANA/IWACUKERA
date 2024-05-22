@@ -18,6 +18,7 @@ const Museum = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1'>
           <img src="../public/nyanza.PNG" />
           <img src="../public/King.jpg" />
+
         </div>
       </div>
       <h1 className='mb-5 text-4xl font-bold text-center -mt-14'>Ibikoresho by'umuco</h1>

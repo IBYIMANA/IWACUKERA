@@ -1,43 +1,55 @@
 import React from 'react';
 import SubNav from '../Components/SubNav';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
 const Abami = () => {
     return (
         <div className='bg-slate-200'>
             <SubNav />
-            <div className='h-screen '>
-                <div className='px-6 py-40 rounded-md shadow-lg sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50 h-17'>
-                    < motion.h1
-                      initial={{opacity:0,y:-100}}
-                      animate={{opacity:1,y:0}}
-                      transition={{duration:1 , delay:0.5}}
-                    className='pb-3 text-4xl font-extrabold text-center text-black mb-7'>AMATEKA Y'ABAMI B'URWANDA </motion.h1>
-                    <motion.p  initial={{opacity:0,x:-100}}
-                      animate={{opacity:1,x:0}}
-                      transition={{duration:1 , delay:0.5}}className='text-center text-1xl'>U Rwanda rwagiye rutegekwa n’abami batandukanye kuva rwabaho kugeza ubwo abanyamateka babagabanyamo ibyiciro bitatu bakurikije ibihe aribyo: Abami b’ibimanuka, abami b’umushumi n’abami b’ibitekerezo.
-                        Abami b’Ibimanuka ni abakomoka kuri Shyerezo, Abami b’umushumi ni abatazwi igihe bategekeye n’ibyabaye ku Ngoma zabo, naho Abami b’Ibitekerezo ni Abami bazwi neza igihe bategekeye n’ibyabaye ku ngoma zabo.
-                        Abami b’Ibimanuka bahera kuri Shyerezo bakagera kuri Kazi.
-                        Naho Abami b’umushumi bahera kuri Gihanga cyahanze Inka n’Ingoma bakagera kuri Cyilima I Rugwe. Abami b’Ibitekerezo ari nabo ba nyuma bahera kuri Kigeli I Mukobanya bakageza ku Mwami wa nyuma w’u Rwanda ariwe Kigeli V Ndahindurwa.</motion.p>
+
+            <div className='min-h-screen py-40 px-11'>
+                <div className='py-20 px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50 shadow-lg rounded-md'>
+                    <motion.h1
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className='text-4xl font-extrabold text-center text-black mb-7 pb-3'
+                    >
+                        AMATEKA Y'ABAMI B'URWANDA
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className='text-center text-xl'
+                    >
+                        U Rwanda rwagiye rutegekwa n’abami batandukanye kuva rwabaho kugeza ubwo abanyamateka babagabanyamo ibyiciro bitatu bakurikije ibihe aribyo: Abami b’ibimanuka, abami b’umushumi n’abami b’ibitekerezo. Abami b’Ibimanuka ni abakomoka kuri Shyerezo, Abami b’umushumi ni abatazwi igihe bategekeye n’ibyabaye ku Ngoma zabo, naho Abami b’Ibitekerezo ni Abami bazwi neza igihe bategekeye n’ibyabaye ku ngoma zabo. Abami b’Ibimanuka bahera kuri Shyerezo bakagera kuri Kazi. Naho Abami b’umushumi bahera kuri Gihanga cyahanze Inka n’Ingoma bakagera kuri Cyilima I Rugwe. Abami b’Ibitekerezo ari nabo ba nyuma bahera kuri Kigeli I Mukobanya bakageza ku Mwami wa nyuma w’u Rwanda ariwe Kigeli V Ndahindurwa.
+                    </motion.p>
                 </div>
-                <motion.h1 initial={{opacity:0,x:-100}}
-                      animate={{opacity:2-onabort,x:0}}
-                      transition={{duration:1 , delay:0.5}}className="mb-4 text-3xl font-bold text-center text-blue-700">Dore uko abami bategetse u Rwanda bagiye bakurikirana:</motion.h1>
-                <div className='flex flex-col gap-2 sm:flex-row sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 sm:pr-12 sm:pl-12 md:pr-24 md:pl-24 '>
-                    <div className="container mx-auto">
-                        <div className="overflow-x-auto">
-                            <table className="w-full border border-collapse border-gray-500 table-auto">
-                                <thead>
-                                    <tr className="bg-gray-200">
-                                        <th className="p-2 text-blue-400 border border-gray-500">Nimero</th>
-                                        <th className="p-2 text-blue-400 border border-gray-500 ">Umwami</th>
-                                        <th className="p-2 text-blue-400 border border-gray-500">Itariki y'ubwami</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="p-2 border border-gray-500">1</td>
-                                        <td className="p-2 border border-gray-500">Gihanga I Ngomijana</td>
-                                        <td className="p-2 border border-gray-500">1091-1124</td>
+                <motion.h1
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="text-3xl font-bold text-center text-blue-700 my-8"
+                >
+                    Dore uko abami bategetse u Rwanda bagiye bakurikirana:
+                </motion.h1>
+                <div className='px-6 sm:px-12 md:px-24 lg:px-36 xl:px-8'>
+                    <div className="w-full overflow-x-auto">
+                        <table className="table-auto border-collapse border border-gray-500 w-full">
+                            <thead>
+                                <tr className="bg-gray-200">
+                                    <th className="border border-gray-500 text-blue-400 p-2">Nimero</th>
+                                    <th className="border border-gray-500 p-2 text-blue-400">Umwami</th>
+                                    <th className="border border-gray-500 p-2 text-blue-400">Itariki y'ubwami</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                        <td className="border border-gray-500 p-2">1</td>
+                                        <td className="border border-gray-500 p-2">Gihanga I Ngomijana</td>
+                                        <td className="border border-gray-500 p-2">1091-1124</td>++++
+  
                                     </tr>
                                     <tr>
                                         <td className="p-2 border border-gray-500">2</td>
@@ -175,53 +187,49 @@ const Abami = () => {
                                         <td className="p-2 border border-black">Kigeli V Ndahindurwa</td>
                                         <td className="p-2 border border-black">1959-1960</td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
-                    
                 </div>
 
-                <div className='flex flex-col gap-12 px-20 sm:gap-16 md:gap-20 lg:gap-12 xl:gap-12'>
-                        <div className='flex gap-5 mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-red-100 hover:scale-105'>
-                            <img src="/umwami1.jpg" alt="" className='w-1/2' />
-                            <div>
-                                <h2 className='mt-4 mb-2 font-medium'>AMATEKA YA Gihanga I Ngomijana (1091-1124) </h2>
-                                <p>Uyu Mwami witwa Gihanga niwe ntangiriro y’ubutegetsi bw’ingoma Nyiginya(fondateur de la dynastie) ni nawe washyizeho gahunda y’Igihugu gitegekwa n’Abami.
 
-                                    Mu ntangiriro z’ubutegetsi bwe, Gihanga nta ngoma yimanye, ahubwo yategekeshaga ibindi birango bibiri aribyo inyundo n’ikindi gikoresho cy’umuziki bita urusengo.</p>
-                                <h2 className='mt-2 mb-2 font-medium text-sky-400'>Gihanga yarongoye Abagore benshi </h2>
-                                <p>Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk'uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere</p>
-                                <a href="https://www.igihe.com/umuco/amateka/amateka-y-umwami-gihanga-i-ngomijana">
-                                    <button className='w-32 h-10 mt-4 mb-4 ml-20 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black'>Komeza</button>
-                                </a>
-                            </div>
+                <div className='flex flex-col gap-5 sm:gap-16 md:gap-20 lg:gap-5 px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50 mt-10'>
+                    <div className='mt-8 bg-gray-100 shadow-lg hover:bg-red-100 hover:scale-105 rounded-lg flex  gap-5'>
+                        <img src="/umwami1.jpg" alt="Gihanga I Ngomijana" className='w-1/2' />
+                        <div className='p-4'>
+                            <h2 className='font-medium mb-2'>AMATEKA YA Gihanga I Ngomijana (1091-1124)</h2>
+                            <p>Uyu Mwami witwa Gihanga niwe ntangiriro y’ubutegetsi bw’ingoma Nyiginya(fondateur de la dynastie) ni nawe washyizeho gahunda y’Igihugu gitegekwa n’Abami. Mu ntangiriro z’ubutegetsi bwe, Gihanga nta ngoma yimanye, ahubwo yategekeshaga ibindi birango bibiri aribyo inyundo n’ikindi gikoresho cy’umuziki bita urusengo.</p>
+                            <h2 className='mt-2 mb-2 font-medium text-sky-400'>Gihanga yarongoye Abagore benshi</h2>
+                            <p>Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk'uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere</p>
+                            <a href="https://www.igihe.com/umuco/amateka/amateka-y-umwami-gihanga-i-ngomijana">
+                                <button className='w-32 h-10 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black mt-4'>Komeza</button>
+                            </a>
                         </div>
-                        <div className='flex gap-5 mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-red-100 hover:scale-105 h-96'>
-                            <img src="/gahima.jpg" alt="" className='w-1/2 h-90' />
-                            <div>
-                                <h2 className='mb-2 font-medium mt-28 '>AMATEKA YA Kanyarwanda I Gahima (1124-1157)</h2>
-                                <p> Kanyarwanda Gahima waje asimbuye se ku ngoma akaba ngo ari yo mpamvu yahawe ririya zina rya Kanyarwanda kubera inshingano yari asigiwe na se Gihanga zo gukomeza kwagura ubutaka yari arazwe</p>
-                                <a href="http://wikirwanda.org/index.php/Umwami_w%E2%80%99u_Rwanda_Kanyarwanda_Gahima(1124-1157)">
-                                    <button className='w-32 h-10 mt-4 mb-4 ml-20 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black'>Komeza</button>
-                                </a>
-                            </div>
+                    </div>
+                    <div className='mt-8 bg-gray-100 shadow-lg hover:bg-red-100 hover:scale-105 rounded-lg flex h-96 gap-5'>
+                        <img src="/gahima.jpg" alt="Kanyarwanda I Gahima" className='w-1/2 ' />
+                        <div className='p-4'>
+                            <h2 className='font-medium mb-2'>AMATEKA YA Kanyarwanda I Gahima (1124-1157)</h2>
+                            <p>Kanyarwanda Gahima waje asimbuye se ku ngoma akaba ngo ari yo mpamvu yahawe ririya zina rya Kanyarwanda kubera inshingano yari asigiwe na se Gihanga zo gukomeza kwagura ubutaka yari arazwe</p>
+                            <a href="http://wikirwanda.org/index.php/Umwami_w%E2%80%99u_Rwanda_Kanyarwanda_Gahima(1124-1157)">
+                                <button className='w-32 h-10 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black mt-4'>Komeza</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='mt-8 bg-gray-100 shadow-lg hover:bg-red-100 hover:scale-105 rounded-lg flex  gap-5'>
+                        <img src="/yuhi.jpg" alt="Yuhi Musindi" className='w-full ' />
+                        <div className='p-4'>
+                            <h2 className='font-medium mb-4'>AMATEKA YA Yuhi Musindi (1157-1180)</h2>
+                            <p>Umwami wakurikiye Kanyarwanda ku itonde ry’abami b’umushumi yitwa Yuhi Musindi akaba yaranitwaga Yuhi ry’i Gara.Aka gace ka Gara rero ngo bishoboka ko baba barashakaga kuvuga Ngara ya Rubungo yari iherereye mu karere ka Bwanacyambwe nkuko ubushakashatsi bubigaragaza. Uyu Mwami niwe mukurambere w’ubwoko bw’ Abasindi ari naho ubu bwoko bukomora iryo zina nkuko benshi mu buzukuru ba Gihanga bagiye batanga amazina y’ubwoko bubakomokaho.</p>
+                            <p>Umwami Yuhi V Musinga ni umwe mu bayoboye u Rwanda wagize inyeshyamba z’abasirikari n’ubwo yaje gutakaza intambara n’abazungu bashakaga colonisation y’u Rwanda. Abasirikari be bazwi nk’inyamibwa barwanye intambara yo kurwanya abazungu n’ubwo batakaje.</p>
+                            <a href="https://www.igihe.com/umuco/amateka/amateka-y-umwami-gihanga-i-ngomijana">
+                                <button className='w-32 h-10 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black mt-4'>Komeza</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='mt-8 bg-gray-100 shadow-lg  hover:bg-red-100 hover:scale-105 rounded-lg flex gap-5 mb-8'>
 
-                        </div>
-                        <div className='flex gap-5 mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-red-100 hover:scale-105'>
-                            <img src="/yuhi.jpg" alt="" className='w-1/2' />
-                            <div>
-                                <h2 className='mt-10 mb-4 font-medium'>AMATEKA YA Yuhi Musindi (1157-1180) </h2>
-                                <p> Umwami wakurikiye Kanyarwanda ku itonde ry’abami b’umushumi yitwa Yuhi Musindi akaba yaranitwaga Yuhi ry’i Gara.Aka gace ka Gara rero ngo bishoboka ko baba barashakaga kuvuga Ngara ya Rubungo yari iherereye mu karere ka Bwanacyambwe nkuko ubushakashatsi bubigaragaza. Uyu Mwami niwe mukurambere w’ubwoko bw’ Abasindi ari naho ubu bwoko bukomora iryo zina nkuko benshi mu buzukuru ba Gihanga bagiye batanga amazina y’ubwoko bubakomokaho.
 
-                                </p>
-                                <p> Umwami Yuhi V Musinga ni umwe mu bayoboye u Rwanda wagize inyeshyamba nyinshi zarwanyije ubutegetsi bwe, ariko aza kuzamururwaho n’abakoloni b’Abadage.</p>
-                                <a href="https://igihe.com/umuco/amateka/article/amateka-y-inyeshyamba-za-mbere-zazengereje-umwami-musinga">
-                                    <button className='w-32 h-10 mb-4 ml-20 text-white bg-green-600 rounded-lg shadow-xl hover:bg-white hover:text-black mt-7'>Komeza</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div className='flex gap-5 mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-red-100 hover:scale-105'>
                             <img src="/abami.jpeg" alt="" className='w-1/2' />
                             <div>
                                 <h2 className='mt-5 mb-5 font-medium'>AMATEKA YA Yuhi II Gahima (1444-1477)</h2>
@@ -231,12 +239,10 @@ const Abami = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
-
-
+                </div>
             </div>
         </div>
     );
-}
+};
 
 export default Abami;

@@ -15,7 +15,11 @@ import Med from './pages/Med';
 import Proverb from './pages/Proverb';
 import Activity from './pages/Activity';
 import Dashboard from './pages/Dashboard';
+
+import AddProverb from './pages/AddProverb';
+import AddEvent from './pages/AddEvent';
 import Contact from './pages/Contact';
+
 
 
 const App = () => {
@@ -38,13 +42,17 @@ const App = () => {
         </Route>
 
         {/* Routes for the admin panel */}
-        <Route path="/admin" element={<LayoutAdmin />}>
-        <Route index element={<Dashboard />} />
-          <Route path="dashboard" element={<Dashboard />} />
+        <Route path="/" element={<LayoutAdmin />}>
+        <Route path="/dashboard" element={<Dashboard />} />
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
+
+          <Route path="addproverb" element={<AddProverb />} />
+          <Route path="addevent" element={<AddEvent />} />
+
          
+
         </Route>
       </Routes>
     </Router>

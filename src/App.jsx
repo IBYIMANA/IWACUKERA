@@ -15,8 +15,12 @@ import Med from './pages/Med';
 import Proverb from './pages/Proverb';
 import Activity from './pages/Activity';
 import Dashboard from './pages/Dashboard';
+
 import AddProverb from './pages/AddProverb';
 import AddEvent from './pages/AddEvent';
+import Contact from './pages/Contact';
+
+
 
 const App = () => {
   return (
@@ -28,6 +32,7 @@ const App = () => {
           <Route path="events" element={<Events />} />
           <Route path="media" element={<Media />} />
           <Route path="practical" element={<Practice />} />
+          <Route path="Contact" element={<Contact/>} />
           <Route path="history" element={<Museum />} />
           <Route path="history/museum" element={<Museum />} />
           <Route path="history/abami" element={<Abami />} />
@@ -42,8 +47,12 @@ const App = () => {
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
+
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />
+
+         
+
         </Route>
       </Routes>
     </Router>

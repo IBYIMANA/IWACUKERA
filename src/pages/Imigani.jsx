@@ -3,6 +3,7 @@ import axios from 'axios';
 import SubNav from '../Components/SubNav';
 
 const Imigani = () => {
+
     const [proverbs, setProverbs] = useState([]);
 
     useEffect(() => {
@@ -37,5 +38,6 @@ const Imigani = () => {
         </div>
     );
 };
+
 
 export default Imigani;

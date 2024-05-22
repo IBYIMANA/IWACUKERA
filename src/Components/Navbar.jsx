@@ -5,6 +5,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+
     <div>
       <nav className="fixed top-0 z-10 w-full bg-gray-50 shadow-lg">
         <div className="flex items-center justify-between px-8 py-4 lg:px-40">
@@ -40,11 +41,13 @@ const NavBar = () => {
               <NavLink to="/media" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Media</NavLink>
               <NavLink to="/events" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Events</NavLink>
               <NavLink to="/dashboard" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Dashboard</NavLink>
+              <NavLink to="/Contact" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Contact</NavLink>
             </div>
           </div>
         </div>
       </nav>
     </div>
+
   );
 };
 

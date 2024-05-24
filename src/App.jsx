@@ -23,6 +23,10 @@ import Gihanga from './pages/Gihanga';
 import Gahima from './pages/Gahima';
 import Yuhi from './pages/Yuhi';
 import LandingPage from './Components/LandingPage';
+import EditEvent from './pages/EditEvent';
+import EditProverb from './pages/EditProverb';
+import AddMedia from './pages/AddMedia';
+import EditMedia from './pages/EditMedia';
 
 
 
@@ -59,8 +63,11 @@ const App = () => {
 
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />
-
-         
+          <Route path="EditEvent" element={<EditEvent />} />
+          <Route path="EditProverb" element={<EditProverb/>} />
+          <Route path='Med' element={<Med/>}/>
+          <Route path='AddMedia' element={<AddMedia/>}/>
+          <Route path='EditMedia' element={<EditMedia/>}/>
 
         </Route>
       </Routes>

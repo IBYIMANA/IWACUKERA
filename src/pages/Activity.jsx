@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { FaEdit, FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 function Activity() {
   return (
@@ -7,59 +7,41 @@ function Activity() {
        <div className="  mt-20 justify-center items-center ml-[80%]  ">
       <Link to ='/addevent'
           type="submit"
-          className="bg-blue-500 hover:bg-blue-600 items-end  text-white py-2 px-4 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+          className="items-end px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
         >
           Add Event
         </Link>
       </div>
-      <div className='flex space-x-0'>
-       
-        <div className='flex flex-col gap-8  ml-20 w-96 mt-10  bg-cyan-50 h-90'>
-        <div>
-        <motion.h1 initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='mt-10 mb-4 ml-7 text-center text-3xl font-bold'>01/01/2024</ motion.h1>
-        < motion.p initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='text-center'> Kwita Izina</motion.p>
-        </div>
-        < motion.img src="../public/intore.jpeg" alt="" initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-         className='w-full ' />
-      
-        </div>
-        <div className='flex flex-col gap-8  ml-20 w-96 mt-10  bg-gray-100 h-90'>
-        <div>
-        <motion.h1 initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='mt-10 mb-4 ml-7 text-center text-3xl font-bold'>01/01/2024</ motion.h1>
-        < motion.p initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='text-center'> Kwita Izina</motion.p>
-        </div>
-        < motion.img src="../public/ibwami.jpg" alt="" initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-         className='w-full ' />
-      
-        </div>
-        <div className='flex flex-col gap-8  ml-20 w-96 mt-10  bg-slate-200 h-90'>
-        <div>
-        <motion.h1 initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='mt-10 mb-4 ml-7 text-center text-3xl font-bold'>01/01/2024</ motion.h1>
-        < motion.p initial={{ opacity: 0, x:100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }} className='text-center'> Kwita Izina</motion.p>
-        </div>
-        < motion.img src="../public/gorillar.jpg" alt="" initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-         className='w-full ' />
-      
-        </div>
-        </div>
+      <div className='flex flex-col gap-2 pt-20 mt-10 ml-20 bg-gray-100 rounded-lg shadow-lg sm:flex-row sm:gap-12 h-96 md:gap-16 lg:gap-20 xl:gap-24 sm:pr-12 sm:pl-12 md:pr-24 md:pl-24 '>
+                    <div className="container mx-auto">
+                    <div className="overflow-x-auto">
+      <table className="w-full pb-20 border border-collapse border-gray-500 table-auto">
+        <thead>
+          <tr className="bg-gray-200">
+            <th className="p-2 text-black border border-gray-500">Date</th>
+            <th className="p-2 text-black border border-gray-500">Decription</th>
+            <th className="p-2 text-black border-gray-500 borde">Image</th>
+            <th className="p-2 text-black border border-gray-500 ">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="p-2 border border-black">Date</td>
+            <td className="p-2 border border-black">Decription</td>
+            <td className="p-2 border border-black">Image</td>
+            <td className="justify-between p-2 border border-black">
+            <Link to="/EditEvent">
+              <button className="mr-2 ml-7"><FaEdit /></button>
+              </Link>
+              <button><FaTrash /></button>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+                    </div>
+                    </div>
       </div>
    
   )

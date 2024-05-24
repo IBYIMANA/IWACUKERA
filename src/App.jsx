@@ -7,7 +7,6 @@ import Media from './pages/Media';
 import Practice from './pages/Practice';
 import Museum from './pages/Museum';
 import Abami from './pages/Abami';
-import Imigani from './pages/Imigani';
 import Imikino from './pages/Imikino';
 import AdminLogin from './pages/AdminLogin';
 import LayoutAdmin from './pages/LayoutAdmin';
@@ -40,7 +39,7 @@ const App = () => {
           <Route path="history" element={<Museum />} />
           <Route path="history/museum" element={<Museum />} />
           <Route path="history/abami" element={<Abami />} />
-          <Route path="history/imigani" element={<Imigani />} />
+          
           <Route path="history/imikino" element={<Imikino />} />
           <Route path="auth/adminLogin" element={<AdminLogin />} />
         </Route>
@@ -51,6 +50,7 @@ const App = () => {
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
+          <Route path="Events" element={<Events />} />
 
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />

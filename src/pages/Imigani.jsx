@@ -12,7 +12,7 @@ const Imigani = () => {
 
     const fetchProverbs = async () => {
         try {
-            const response = await axios.get('https://iwacu-kera-backend-2.onrender.com/api-docs/#/Proverbs/get_api_proverbs__id_');
+            const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/pro/list');
             console.log(response.data);
             setProverbs(response.data);
         } catch (error) {
@@ -25,7 +25,7 @@ const Imigani = () => {
             <SubNav />
             <div className='h-screen bg-red-400 py-10 px-10'>
                 <h1 className='text-white text-center mb-5'>Imigani</h1>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-4 bg-slate-300 mt-40">
                     {Array.isArray(proverbs) && proverbs.map(proverb => (
                         <div key={proverb._id} className="bg-white p-4 rounded-lg shadow-md">
                             <h2 className="text-lg font-semibold mb-2">{proverb.title}</h2>

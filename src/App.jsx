@@ -18,6 +18,10 @@ import Dashboard from './pages/Dashboard';
 import AddProverb from './pages/AddProverb';
 import AddEvent from './pages/AddEvent';
 import Contact from './pages/Contact';
+import Gihanga from './pages/Gihanga';
+import Gahima from './pages/Gahima';
+import Yuhi from './pages/Yuhi';
+import LandingPage from './Components/LandingPage';
 import EditEvent from './pages/EditEvent';
 import EditProverb from './pages/EditProverb';
 import AddMedia from './pages/AddMedia';
@@ -30,8 +34,9 @@ const App = () => {
     <Router>
       <Routes>
         {/* Routes for the main website */}
-        <Route path="/" element={<AllPages />}>
-          <Route index element={<Home />} />
+        <Route  element={<AllPages />}>
+        <Route path="/" element={<LandingPage/>} />
+          <Route path='/'element={<Home />} />
           <Route path="events" element={<Events />} />
           <Route path="media" element={<Media />} />
           <Route path="practical" element={<Practice />} />
@@ -42,6 +47,10 @@ const App = () => {
           
           <Route path="history/imikino" element={<Imikino />} />
           <Route path="auth/adminLogin" element={<AdminLogin />} />
+          <Route path="gihanga" element={<Gihanga />} />
+          <Route path="gahima" element={<Gahima/>} />
+          <Route path="yuhi" element={<Yuhi/>} />
+
         </Route>
 
         {/* Routes for the admin panel */}

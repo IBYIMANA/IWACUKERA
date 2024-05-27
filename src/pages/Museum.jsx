@@ -33,17 +33,17 @@ const Museum = () => {
       <h1 className='mb-5 text-4xl font-bold text-center -mt-14'>Ibikoresho by'umuco</h1>
       <div className='grid justify-around grid-cols-1 gap-10 px-4 lg:grid-cols-4 md:grid-cols-2'>
         <div className='justify-center bg-white rounded-lg shadow-lg hover:scale-105'>
-          <img src="../public/uruswo.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
+          <img src="./uruswo.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
           <p className='text-2xl font-bold text-center'>URUSYO</p>
           <p className='ml-6'>Urusyo rusobanura ibuye, rimeze nk'uruziga useraho (rwo gusya ingano), uruziga rukomey . Mu kwagura ikintu cyizengurutse cyane ibyatsi cyangwa uruziga rwa foromaje . Iri jambo rishobora kandi kwerekeza ikirundo cy'ibiti bitwikiriwe nisi ikoreshwa mu gukora amakara .</p>
         </div>
         <div className='justify-center bg-white rounded-lg shadow-lg hover:scale-105'>
-          <img src="../public/ingobyi.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
+          <img src="./ingobyi.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
           <p className='text-2xl font-bold text-center'>INGOBYI</p>
           <p className='ml-6'>Ingobyi ya Kinyarwanda ni igikoresho gifite ibigwi n’amateka ahambaye mu muco wu Rwanda, kikaba ari kimwe mu bigaragaza intekerezo z’ihangabuhanga abantu b'Abanyarwanda bari bakungahayeho aho yabafashaga guhanga ibikoresho bibafasha gukemura ibibazo biriho muri icyo gihe hari mo ingobyi yo guheka abarwayi.</p>
         </div>
         <div className='justify-center bg-white rounded-lg shadow-lg hover:scale-105'>
-          <img src="../public/inkongoro.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
+          <img src="./inkongoro.jpg" className="transition duration-300 transform bg-white rounded-md hover:scale-105" />
           <p className='text-2xl font-bold text-center'>IGISABO</p>
           <p className='ml-6'> Igisabo ni igikoresho cyubashywe mu muco nyarwanda kuva kera, cyifashishwa mu gikorwa cyo ‘gucunda amata’, amata nayo akaba ari ikinyobwa gifite intungamubiri nyinshi ku mubiri w’umuntu.</p>
           <p className='ml-6'>inkongoro nigikoresho kera  banyweramo amata</p>

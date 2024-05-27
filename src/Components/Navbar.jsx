@@ -10,7 +10,7 @@ const NavBar = () => {
       <nav className="fixed top-0 z-10 w-full shadow-lg bg-gray-50">
         <div className="flex items-center justify-between px-8 py-4 lg:px-40">
           <div className="flex items-center">
-            <img src="./logo.png" alt="logo" className="h-20 w-30" />
+            <img src="../public/logo.png" alt="logo" className="h-20 w-30" />
           </div>
           <div className="block lg:hidden">
             <button

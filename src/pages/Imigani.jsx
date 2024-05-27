@@ -22,7 +22,7 @@ const Imigani = () => {
 
     return (
         <div>
-            <SubNav />
+           
             <div className='h-screen px-10 py-10 bg-red-400'>
                 <h1 className='mb-5 text-center text-white'>Imigani</h1>
                 <div className="grid grid-cols-3 gap-4 mt-40 bg-slate-300">

@@ -60,7 +60,7 @@ const App = () => {
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
-          <Route path="Events" element={<Events />} />
+          <Route path="Events/:id" element={<Events />} />
 
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />

@@ -3,8 +3,8 @@ import React from 'react'
 function Gahima() {
   return (
     <div>
-        <div className='bg-gray-200 mt-[7%] px-40 py-7' >
-            <h1 className='text-center text-4xl mb-4 font-extrabold capitalize'> Amateka Y'Umwami Kanyarwanda I Gahima (1124-1157)</h1>
+        <div className='bg-gray-200 mt-[7%] px-40 py-7 sm:px-6 md:px-10 lg:px-20 xl:px-40' >
+            <h1 className='text-center text-4xl mb-4 font-extrabold capitalize  sm:text-3xl md:text-4xl'> Amateka Y'Umwami Kanyarwanda I Gahima (1124-1157)</h1>
             <p className='mt-4 mb-4 '>Kanyarwanda nk’uko tubyumva ni izina rivuga nyir’u Rwanda gusa n’ubwo abantu batandukanye bibwira ko izina u Rwanda ari iry’iki gihugu gusa ngo siko bimeze.</p>
 <p  className='mt-4 mb-4 '>Izina u Rwanda usanga ryitwa n’uduce tumwe na tumwe two mu Rwanda ndetse no mu bihugu bihana imbibi narwo kuko ngo rimwe na rimwe iri zina ryanahabwaga tumwe mu turere u Rwanda rwabaga rumaze kwigarurira mu gihe cyarwo cyo kwanda (kwaguka).</p>
 

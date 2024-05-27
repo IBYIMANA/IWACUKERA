@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Practice = () => {
   return (
-    <div>
-      <div className='flex flex-col gap-8 px-6 pb-6 mt-[3%] mb-4 rounded-lg shadow-md lg:flex-row bg-slate-100 sm:px-9'>
-        <div className='w-full lg:w-1/2 h-64 sm:h-80 md:h-[35rem] mt-20'>
+    <div className=''>
+      <div className='flex flex-col gap-8 px-6 pb-6 mt-[8%] mb-4 rounded-lg shadow-md lg:flex-row bg-slate-100 sm:px-9'>
+        <div className='w-full lg:w-1/2 h-64 sm:h-80 md:h-[35rem] mt-2'>
           <motion.img
             src="/abakuze.jpg"
             alt=""
@@ -15,7 +16,7 @@ const Practice = () => {
             className='w-full h-full'
           />
         </div>
-        <div className='w-full mt-12 lg:w-1/2 lg:mt-28'>
+        <div className='w-full mt-12 lg:w-1/2 lg:mt-10'>
           <h1 className=' font-medium sm:text-3xl md:text-1xl'>
             Uko u Rwanda rwatuwe kuva mu myaka ibihumbi ishize
           </h1>
@@ -38,13 +39,13 @@ const Practice = () => {
           <h1 className='mt-6 font-medium text-slate-400'>
             Inkomoko y’abatuye u Rwanda
           </h1>
-          <a href="https://www.igihe.com/umuco/amateka/article/byagenze-gute-ngo-abantu-bature-mu-rwanda">
+          <Link to="/inkomoko">
             <button className='w-full h-10 mt-6 mb-4 text-white bg-green-600 rounded-lg shadow-xl sm:w-32  hover:bg-yellow-400 hover:text-black animate-bounce'>
               Komeza Usome
             </button>
-          </a>
+          </Link>
         </div>
-        <div className='flex flex-col items-center w-full gap-4  rounded-lg shadow-lg lg:w-1/4 lg:mt-20'>
+        <div className='flex flex-col items-center w-full gap-4  rounded-lg shadow-lg lg:w-1/4 lg:mt-5'>
           <div className='w-40 h-40'>
             <img src="ibiseke.jpeg" alt="" className=' w-full h-full rounded-lg' />
           </div>
@@ -83,7 +84,7 @@ const Practice = () => {
             U Rwanda ryohambere Indege n'imodoka bitaraza ingendo zakorwaga hifashishijwe igikoresho bita INGOBYI.
           </p>
           <p className='mt-4  text-center sm:text-lg text-1xl'>
-            Ingobyi yishwashishwaga mugutwara Abami igehe babaga bakeneye gutembere igihugu cyabo, ndetse ikaba yaranifashishwaga mugutwara Umugeni igihe agiye kurongorwa ndetse kandi yanifashishwaga mukujyana abarwayi kwa muganga
+            Ingobyi yishwashishwaga mugutwara Abami igehe babaga bakeneye gutembere igihugu cyabo, ndetse ikaba yaranifashishwaga mugutwara Umugeni igihe agiye kurongorwa ndetse kandi yanifashishwaga mukujyana abarwayi kwa muganga.
           </p>
         </div>
         <div className='w-full h-64 px-6 lg:w-1/2 sm:h-80 md:h-96 lg:px-0'>

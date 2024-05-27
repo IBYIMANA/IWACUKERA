@@ -6,8 +6,8 @@ const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex h-screen bg-gray-300">
-      <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-10 rounded-md text-gray-800 font-semibold lg:flex lg:flex-col py-8 px-4 hidden">
+    <div className="flex h-screen bg-green-100">
+      <div className="fixed top-0 left-0 h-full w-64 bg-slate-50 shadow-lg z-10 rounded-md text-gray-800 font-semibold lg:flex lg:flex-col py-8 px-4 hidden">
         <div className="flex items-center justify-center mb-8">
           <img src="../public/logo.png" alt="Logo" className='h-20 w-30' />
         </div>

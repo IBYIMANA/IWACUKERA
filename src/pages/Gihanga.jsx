@@ -3,8 +3,8 @@ import React from 'react'
 function Gihanga() {
   return (
     <div >
-      <div className='bg-gray-200 mt-[7%] px-40 py-7'>
-        <h1 className='text-center text-4xl mb-4 font-extrabold capitalize'>Amateka y’Umwami Gihanga I Ngomijana (1091-1124)</h1>
+      <div className='bg-gray-200 mt-[7%] px-40 py-7 sm:px-6 md:px-10 lg:px-20 xl:px-40'>
+        <h1 className='text-center text-4xl mb-4 font-extrabold capitalize  sm:text-3xl md:text-4xl'>Amateka y’Umwami Gihanga I Ngomijana (1091-1124)</h1>
         <p className='mb-2'>Uyu mwami witwa Gihanga avugwaho byinshi kandi agafatwa nk’umuntu ngo wahanze u Rwanda.</p>
         <p>Iyo umuntu ahereye ku mateka y’abami b’ibimanuka bivugwa ko bakomoka mu ijuru, usanga bavugwa ko baba baramanukiye bwa mbere mu Mubari (mu Burasirazuba bw’u Rwanda ahitwa ku rutare rwa Kinani) aho baje basanga hatuwe kandi hategekwa muri icyo gihe n’uwitwa Kabeja wo mu bwoko bw’Abazigaba.Uyu Mwami witwa Gihanga niwe ntangiriro y’ubutegetsi bw’ingoma Nyiginya(fondateur de la dynastie) ni nawe washyizeho gahunda y’Igihugu gitegekwa n’Abami.
 
@@ -19,11 +19,11 @@ N’ubwo hashidikanywa niba Gihanga ari we wahanze u Rwanda cyangwa atari we ngo
 <p>
 Uretse n’ibyo kandi ngo aho umusezero (imva y’umwami) wa Gihanga wari ku gasozi ka Muganza ya Kayenzi ngo naho hakorerwaga imihango yo kumuterekera niba ari ko nabyita. Aha ngaha i bwami ngo bakaba barahoherezaga abiru bo kuhakorera imihango yabugenewe.Habaga indi mihango yamukorerwaga yari ishingiye ku nka ikaba yarakorwaga n’abo mu muryango bita Abaheka ; umutware wabo agatura i Runda ndetse akaba yarafatwaga nk’umwiru mukuru w’inka.
 </p>
-<h1 className='text-center text-2xl mb-4 font-medium mt-4'> Ubwoko bukomoka kuri Gihanga </h1>
+<h1 className='text-center text-2xl mb-4 font-medium mt-4  sm:text-3xl md:text-4xl'> Ubwoko bukomoka kuri Gihanga </h1>
 <p>
 Ntawakwirengagiza ubwoko bw’Abatsobe nabwo ngo bukomoka kuri Gihanga, kuko ngo uwo bakomokaho witwa Rutsobe ari umuhungu yabyaye hanze. Uyu muryango nawo ukaba waraje kubahwa ibwami kubera imihango y’ubwiru wakoraga, dore ko ngo banagiraga ingoma yabo yitwa Rwamo naho umurwa baturagaho ukaba wari i Kinyambi muri Runda.Umuryango w’ Abatsobe wari ufite agaciro mu butegetsi bwite bw’igihugu kuko bari bashinzwe imihango y’ubwiru ijyanye n’umuganura bagatura mu karere k’u Bumbogo bakagira n’umutwe w’ingabo bayoboraga witwa Gakondo ukomoka kuri Gihanga.Ikindi kivugwa kuri Gihanga ni uko igihugu yategekaga cyarengaga imbibi z’u Rwanda tuzi ubu. Ibi bigashingirwa ku ntekerezo zigaragaza ko ubutegetsi bwe bwageraga hakurya mu burengerazuba bwa Congo aho bitaga mu Bunyabungo ndetse n’ahitwa Buhindangoma hakurya muri Rutshuru.
 </p>
-<h1 className='text-center text-2xl mb-4 font-medium mt-4'> Gihanga yarongoye Abagore benshi</h1>
+<h1 className='text-center text-2xl mb-4 font-medium mt-4  sm:text-3xl md:text-4xl'> Gihanga yarongoye Abagore benshi</h1>
 <p>
 Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk’uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere.
 </p>

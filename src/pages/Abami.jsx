@@ -196,19 +196,19 @@ const Abami = () => {
 
                 <div className='flex flex-col gap-5 px-6 mt-10 sm:gap-16 md:gap-20 lg:gap-5 sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50 '>
                     <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 lg:flex-row sm:px-9 gap-7'>
-                        <img src="./umwami1.jpg" alt="Gihanga I Ngomijana" className='w-1/2 sm:w-1/2' />
+                        <img src="../public/umwami1.jpg" alt="Gihanga I Ngomijana" className='w-1/2 sm:w-1/2' />
                         <div className='p-4'>
                             <h2 className='mb-2 font-medium'>AMATEKA YA Gihanga I Ngomijana (1091-1124)</h2>
                             <p>Uyu Mwami witwa Gihanga niwe ntangiriro y’ubutegetsi bw’ingoma Nyiginya(fondateur de la dynastie) ni nawe washyizeho gahunda y’Igihugu gitegekwa n’Abami. Mu ntangiriro z’ubutegetsi bwe, Gihanga nta ngoma yimanye, ahubwo yategekeshaga ibindi birango bibiri aribyo inyundo n’ikindi gikoresho cy’umuziki bita urusengo.</p>
                             <h2 className='mt-2 mb-2 font-medium text-sky-400'>Gihanga yarongoye Abagore benshi</h2>
                             <p>Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk'uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere</p>
-                            <Link to='./gihanga'>
+                            <Link to='../public/gihanga'>
                                 <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>
                     </div>
                     <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 h-96 lg:flex-row sm:px-9 gap-7'>
-                        <img src="./gahima.jpg" alt="Kanyarwanda I Gahima" className='w-1/2 sm:w-1/2 ' />
+                        <img src="/gahima.jpg" alt="Kanyarwanda I Gahima" className='w-1/2 sm:w-1/2 ' />
                         <div className='p-4'>
                             <h2 className='mt-20 mb-2 font-medium'>AMATEKA YA Kanyarwanda I Gahima (1124-1157)</h2>
                             <p className=''>Kanyarwanda Gahima waje asimbuye se ku ngoma akaba ngo ari yo mpamvu yahawe ririya zina rya Kanyarwanda kubera inshingano yari asigiwe na se Gihanga zo gukomeza kwagura ubutaka yari arazwe</p>

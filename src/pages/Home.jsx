@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       
         <div className='mt-20'>
-        <img src="../public/ibiyaga.jpg" alt="Ibiseke" className='w-full'  />
+        <img src="./ibiyaga.jpg" alt="Ibiseke" className='w-full'  />
 
 
 

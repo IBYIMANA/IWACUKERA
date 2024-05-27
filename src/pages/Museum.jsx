@@ -25,8 +25,8 @@ const Museum = () => {
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1'>
-          <img src="../public/nyanza.PNG" />
-          <img src="../public/King.jpg" />
+          <img src="./nyanza.PNG" />
+          <img src="./King.jpg" />
 
         </div>
       </div>
@@ -49,7 +49,7 @@ const Museum = () => {
           <p className='ml-6'>inkongoro nigikoresho kera  banyweramo amata</p>
         </div>
         <div className='justify-center bg-white rounded-lg shadow-lg hover:scale-105'>
-          <img src="../public/igicuma.webp" className="transition duration-300 transform h-60 bg-white rounded-md hover:scale-105" />
+          <img src="./igicuma.webp" className="transition duration-300 transform bg-white rounded-md h-60 hover:scale-105" />
           <p className='text-2xl font-bold text-center'>UDUCUMA</p>
           <p className='ml-6'> mumuco nyarwanda iyo umuntu yagusuraga wamyakirizaga icyokunywa nkinzoga ,amata ibi nibikoresho bakoreshaga banyweramo inzoga ,banazibikamo ibyo bita kuzitara kugirango zishye </p>
         </div>

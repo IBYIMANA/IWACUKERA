@@ -3,18 +3,17 @@ import axios from 'axios';
 import SubNav from '../Components/SubNav';
 
 const Events = () => {
-
-    const [proverbs, setProverbs] = useState([]);
+    const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetchProverbs();
+        fetchEvents();
     }, []);
 
-    const fetchProverbs = async () => {
+    const fetchEvents = async () => {
         try {
-            const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/pro/list');
+            const response = await axios.post('https://iwacu-kera-backend-1.onrender.com/api/events/create');
             console.log(response.data);
-            setProverbs(response.data);
+            setEvents(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -22,15 +21,15 @@ const Events = () => {
 
     return (
         <div>
-            <SubNav />
-            <div className='h-screen px-10 py-20 bg-red-400'>
-                <h1 className='mb-20 text-center text-white'>Imigani</h1>
+        
+            <div className='h-screen px-10 py-40'>
+                <h1 className='mb-20 text-2xl font-bold text-center text-black'>Event</h1>
                 <div className="grid grid-cols-3 gap-4">
-                    {Array.isArray(proverbs) && proverbs.map(proverb => (
-                        <div key={proverb._id} className="p-4 bg-white rounded-lg shadow-md">
-                            <h2 className="mb-2 text-lg font-semibold">{proverb.title}</h2>
-                            <p className="text-gray-700">{proverb.content}</p>
-                            <p className="mt-2 text-gray-500">Origin: {proverb.origin}</p>
+                    {Array.isArray(events) && events.map(event => (
+                        <div key={event._id} className="p-4 text-black bg-white rounded-lg shadow-md">
+                            <h2 className="mb-2 text-lg font-semibold">{event.title}</h2>
+                            <p className="text-gray-700">{event.description}</p>
+                            <p className="mt-2 text-gray-500">{event.date}</p>
                         </div>
                     ))}
                 </div>
@@ -38,6 +37,5 @@ const Events = () => {
         </div>
     );
 };
-
 
 export default Events;

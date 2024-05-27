@@ -26,6 +26,7 @@ import EditEvent from './pages/EditEvent';
 import EditProverb from './pages/EditProverb';
 import AddMedia from './pages/AddMedia';
 import EditMedia from './pages/EditMedia';
+import Imigani from './pages/Imigani';
 
 
 
@@ -44,7 +45,7 @@ const App = () => {
           <Route path="history" element={<Museum />} />
           <Route path="history/museum" element={<Museum />} />
           <Route path="history/abami" element={<Abami />} />
-          
+          <Route path="history/imigani" element={<Imigani />} />
           <Route path="history/imikino" element={<Imikino />} />
           <Route path="auth/adminLogin" element={<AdminLogin />} />
           <Route path="gihanga" element={<Gihanga />} />

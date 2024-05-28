@@ -55,10 +55,10 @@ const App = () => {
           <Route path="gahima" element={<Gahima/>} />
           <Route path="yuhi" element={<Yuhi/>} />
           <Route path="inkomoko" element={<Inkomoko/>} />
-          <Route path="login" element={<Login/>} />
        
 
         </Route>
+          <Route path="login" element={<Login/>} />
 
         {/* Routes for the admin panel */}
         <Route path="/" element={<LayoutAdmin />}>
@@ -70,7 +70,7 @@ const App = () => {
 
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />
-          <Route path="EditEvent" element={<EditEvent />} />
+          <Route path="EditEvent/:id" element={<EditEvent />} />
           <Route path="EditProverb/:id" element={<EditProverb/>} />
           <Route path='Med' element={<Med/>}/>
           <Route path='AddMedia' element={<AddMedia/>}/>

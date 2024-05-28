@@ -15,7 +15,6 @@ const Proverb = () => {
   const fetchProverbs = async () => {
     try {
       const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/pro/list');
-      console.log(response.data);
       setProverbs(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -31,7 +30,6 @@ const Proverb = () => {
       await axios.delete(`https://iwacu-kera-backend-1.onrender.com/api/pro/delete/${id}`);
       setProverbs(proverbs.filter(proverb => proverb._id !== id)); // Remove the deleted proverb from the state
       setDeleteMessage('Proverb deleted successfully');
-
       
       setTimeout(() => {
         setDeleteMessage('');
@@ -50,7 +48,7 @@ const Proverb = () => {
           </div>
         )}
 
-        <div className="mt-20 flex justify-end mr-20 ">
+        <div className="mt-10 justify-center items-center ml-[80%] ">
           <Link to='/addproverb'
             type="submit"
             className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
@@ -59,12 +57,12 @@ const Proverb = () => {
           </Link>
         </div>
 
-        <div className='flex flex-col bg-gray-100 mt-10 mx-20 shadow-lg rounded-lg pt-10'>
+        <div className='flex flex-col bg-gray-100 mt-10 mx-auto shadow-lg rounded-lg pt-10 max-w-screen-lg'>
           <div className="container mx-auto">
-            <div className="overflow-x-auto">
-              <table className="table-auto border-collapse border pb-20 border-gray-500 ml-24 w-full">
+            <div>
+              <table className="table-auto border-collapse border pb-20 border-gray-500 w-full">
                 <thead>
-                  <tr className="bg-gray-200">
+                  <tr className="bg-blue-200">
                     <th className="border border-gray-500 text-blue-400 p-2">Title</th>
                     <th className="border border-gray-500 p-2 text-blue-400">Content</th>
                     <th className="border border-gray-500 p-2 text-blue-400">Origin</th>

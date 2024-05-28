@@ -54,10 +54,10 @@ const App = () => {
           <Route path="gahima" element={<Gahima/>} />
           <Route path="yuhi" element={<Yuhi/>} />
           <Route path="inkomoko" element={<Inkomoko/>} />
-          <Route path="login" element={<Login/>} />
        
 
         </Route>
+          <Route path="login" element={<Login/>} />
 
         {/* Routes for the admin panel */}
         <Route path="/" element={<LayoutAdmin />}>

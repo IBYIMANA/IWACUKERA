@@ -28,14 +28,14 @@ const Events = () => {
 
     return (
         <div>
-            <div className='h-screen px-10 py-40'>
-                <h1 className='text-2xl font-bold text-center text-black '>Events</h1>
+            <div className='px-10 py-40'>
+                <h1 className='text-3xl font-bold text-center text-black mb-7'>Events</h1>
                 {loading ? (
                     <p className="text-center text-gray-700">Loading...</p>
                 ) : error ? (
                     <p className="text-center text-red-700">{error}</p>
                 ) : eventList.length > 0 ? (
-                    <div className="grid grid-cols-2 gap-4 mt-40">
+                    <div className="grid grid-cols-2 gap-4 ">
                         {eventList.map(event => (
                             <div key={event._id} className="p-4 text-black bg-white rounded-lg shadow-md">
                                 <h2 className="mb-2 text-lg font-semibold">{event.title}</h2>

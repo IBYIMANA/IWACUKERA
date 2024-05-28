@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function AddProverb() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [origin, setOrigin] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -19,21 +22,29 @@ function AddProverb() {
       setTitle('');
       setContent('');
       setOrigin('');
+      // Set success alert message
+      setAlertMessage('Proverb added successfully');
+      // Navigate to proverb page
+      navigate('/proverb');
     } catch (error) {
       console.error('Error adding proverb:', error);
+      // Set error alert message
+      setAlertMessage('Error adding proverb. Please try again.');
     }
   };
 
   return (
     <div className="bg-gray-100 p-8 rounded-lg w-auto ml-20 mt-20 shadow-md">
       <h1 className="text-2xl font-semibold mb-4">Add Proverb</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="title" className="block mb-2 font-semibold text-gray-700">Title</label>
           <input
             type="text"
             id="title"
             name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
             className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
             placeholder="Enter title"
           />
@@ -44,6 +55,8 @@ function AddProverb() {
             id="content"
             name="content"
             rows="4"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
             className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
             placeholder="Enter content"
           ></textarea>
@@ -54,6 +67,8 @@ function AddProverb() {
             type="text"
             id="origin"
             name="origin"
+            value={origin}
+            onChange={(e) => setOrigin(e.target.value)}
             className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
             placeholder="Enter origin"
           />
@@ -64,6 +79,11 @@ function AddProverb() {
         >
           Add New
         </button>
+        {alertMessage && (
+          <div className={`mt-4 p-2 rounded-lg ${alertMessage.includes('successfully') ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+            {alertMessage}
+          </div>
+        )}
       </form>
     </div>
   );

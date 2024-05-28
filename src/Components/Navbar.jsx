@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
 
     <div>
-      <nav className="fixed top-0 z-10 w-full bg-gray-50 shadow-lg">
+      <nav className="fixed top-0 z-10 w-full shadow-lg bg-gray-50">
         <div className="flex items-center justify-between px-8 py-4 lg:px-40">
           <div className="flex items-center">
             <img src="../public/logo.png" alt="logo" className="h-20 w-30" />
@@ -34,9 +34,12 @@ const NavBar = () => {
             </button>
           </div>
           <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
+
             <div className="flex flex-col lg:flex-row lg:ml-auto lg:space-x-4 text-sm lg:flex-grow">
               <NavLink to="/" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Home</NavLink>
               <NavLink to="/history" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>History</NavLink>
+
+            
               <NavLink to="/practical" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Practical Information</NavLink>
               <NavLink to="/media" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Media</NavLink>
               <NavLink to="/events" exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md'}>Events</NavLink>

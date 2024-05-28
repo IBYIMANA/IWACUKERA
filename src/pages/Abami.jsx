@@ -202,7 +202,7 @@ const Abami = () => {
                             <p>Uyu Mwami witwa Gihanga niwe ntangiriro y’ubutegetsi bw’ingoma Nyiginya(fondateur de la dynastie) ni nawe washyizeho gahunda y’Igihugu gitegekwa n’Abami. Mu ntangiriro z’ubutegetsi bwe, Gihanga nta ngoma yimanye, ahubwo yategekeshaga ibindi birango bibiri aribyo inyundo n’ikindi gikoresho cy’umuziki bita urusengo.</p>
                             <h2 className='mt-2 mb-2 font-medium text-sky-400'>Gihanga yarongoye Abagore benshi</h2>
                             <p>Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk'uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere</p>
-                            <Link to='../public/gihanga'>
+                            <Link to='/gihanga'>
                                 <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>
@@ -212,7 +212,7 @@ const Abami = () => {
                         <div className='p-4'>
                             <h2 className='mt-20 mb-2 font-medium'>AMATEKA YA Kanyarwanda I Gahima (1124-1157)</h2>
                             <p className=''>Kanyarwanda Gahima waje asimbuye se ku ngoma akaba ngo ari yo mpamvu yahawe ririya zina rya Kanyarwanda kubera inshingano yari asigiwe na se Gihanga zo gukomeza kwagura ubutaka yari arazwe</p>
-                            <Link to='./gahima'>
+                            <Link to='/gahima'>
                                 <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>

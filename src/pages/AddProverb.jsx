@@ -41,7 +41,8 @@ function AddProverb() {
   };
 
   return (
-    <div className="bg-gray-100 p-8 rounded-lg w-auto ml-20 mt-20 shadow-md">
+    <div className="flex justify-center items-center  h-screen ">
+      <div className="bg-blue-100 p-8 rounded-lg w-[60%] shadow-lg">
       <ToastContainer/>
       <h1 className="text-2xl font-semibold mb-4">Add Proverb</h1>
       <form onSubmit={handleSubmit}>
@@ -93,6 +94,7 @@ function AddProverb() {
           </div>
         )}
       </form>
+      </div>
     </div>
   );
 }

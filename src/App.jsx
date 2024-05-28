@@ -7,7 +7,6 @@ import Media from './pages/Media';
 import Practice from './pages/Practice';
 import Museum from './pages/Museum';
 import Abami from './pages/Abami';
-import Imigani from './pages/Imigani';
 import Imikino from './pages/Imikino';
 import AdminLogin from './pages/AdminLogin';
 import LayoutAdmin from './pages/LayoutAdmin';
@@ -29,6 +28,8 @@ import AddMedia from './pages/AddMedia';
 import EditMedia from './pages/EditMedia';
 import Inkomoko from './pages/Inkomoko';
 import Login from './pages/Login';
+import Imigani from './pages/Imigani';
+
 
 
 
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
+          <Route path="Events/:id" element={<Events />} />
 
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />

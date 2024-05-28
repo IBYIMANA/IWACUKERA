@@ -19,6 +19,7 @@ const Imigani = () => {
     }
   };
 
+
   return (
     <div>
       <SubNav />
@@ -43,6 +44,7 @@ const Imigani = () => {
               ))}
             </tbody>
           </table>
+
         </div>
       </div>
     </div>

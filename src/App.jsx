@@ -25,8 +25,11 @@ import LandingPage from './Components/LandingPage';
 import EditEvent from './pages/EditEvent';
 import EditProverb from './pages/EditProverb';
 import AddMedia from './pages/AddMedia';
-import EditMedia from './pages/EditMedia';
+import EditMedia from './pages/EditMedi
+import Inkomoko from './pages/Inkomoko';
+import Login from './pages/Login';
 import Imigani from './pages/Imigani';
+
 
 
 
@@ -51,6 +54,9 @@ const App = () => {
           <Route path="gihanga" element={<Gihanga />} />
           <Route path="gahima" element={<Gahima/>} />
           <Route path="yuhi" element={<Yuhi/>} />
+          <Route path="inkomoko" element={<Inkomoko/>} />
+          <Route path="login" element={<Login/>} />
+       
 
         </Route>
 
@@ -65,7 +71,7 @@ const App = () => {
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />
           <Route path="EditEvent" element={<EditEvent />} />
-          <Route path="EditProverb" element={<EditProverb/>} />
+          <Route path="EditProverb/:id" element={<EditProverb/>} />
           <Route path='Med' element={<Med/>}/>
           <Route path='AddMedia' element={<AddMedia/>}/>
           <Route path='EditMedia' element={<EditMedia/>}/>

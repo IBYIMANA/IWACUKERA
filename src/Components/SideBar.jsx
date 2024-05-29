@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from "../../public/logo.png";
 import { FaTachometerAlt, FaBook, FaCalendarAlt, FaPhotoVideo, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
 
 const SideBar = () => {
@@ -7,11 +8,11 @@ const SideBar = () => {
 
   return (
     <div className="flex h-screen bg-green-100">
-      <div className="fixed top-0 left-0 h-full w-64 bg-blue-200 shadow-lg z-10 rounded-md text-gray-800 font-semibold lg:flex lg:flex-col py-8 px-4 hidden">
+      <div className="fixed top-0 left-0 z-10 hidden w-64 h-full px-4 py-8 font-semibold text-gray-800 bg-blue-200 rounded-md shadow-lg lg:flex lg:flex-col">
         <div className="flex items-center justify-center mb-8">
-          <img src="../public/logo.png" alt="Logo" className='h-20 w-30' />
+          <img src= { Logo}alt="Logo" className='h-20 w-30' />
         </div>
-        <nav className="flex flex-col space-y-4 justify-center items-center mt-10">
+        <nav className="flex flex-col items-center justify-center mt-10 space-y-4">
           <NavLink
             to="/dashboard"
             exact="true"
@@ -65,7 +66,7 @@ const SideBar = () => {
           <NavLink
             to="/logout"
             exact="true"
-            className="flex items-center text-black hover:bg-blue-300 text-2xl border-b border-stone-100 shadow-lg rounded-lg px-3 py-2"
+            className="flex items-center px-3 py-2 text-2xl text-black border-b rounded-lg shadow-lg hover:bg-blue-300 border-stone-100"
           >
             <FaSignOutAlt className="mr-2" />
             Logout
@@ -73,8 +74,8 @@ const SideBar = () => {
         </div>
       </div>
 
-      <div className="lg:hidden flex items-center justify-between w-full bg-white p-4 shadow-lg">
-        <img src="../public/logo.png" alt="Logo" className='h-10 w-20' />
+      <div className="flex items-center justify-between w-full p-4 bg-white shadow-lg lg:hidden">
+        <img src="../public/logo.png" alt="Logo" className='w-20 h-10' />
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-2xl text-gray-800 focus:outline-none"
@@ -84,11 +85,11 @@ const SideBar = () => {
       </div>
 
       {isOpen && (
-        <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-20 flex flex-col py-8 px-4 lg:hidden">
+        <div className="fixed top-0 left-0 z-20 flex flex-col w-64 h-full px-4 py-8 bg-white shadow-lg lg:hidden">
           <div className="flex items-center justify-center mb-8">
             <img src="../public/logo.png" alt="Logo" className='h-20 w-30' />
           </div>
-          <nav className="flex flex-col space-y-4 justify-center items-center mt-10">
+          <nav className="flex flex-col items-center justify-center mt-10 space-y-4">
             <NavLink
               to="/dashboard"
               exact="true"
@@ -142,7 +143,7 @@ const SideBar = () => {
             <NavLink
               to="/logout"
               exact="true"
-              className="flex items-center text-black hover:bg-blue-300 text-2xl border-b border-stone-100 shadow-lg rounded-lg px-3 py-2"
+              className="flex items-center px-3 py-2 text-2xl text-black border-b rounded-lg shadow-lg hover:bg-blue-300 border-stone-100"
             >
               <FaSignOutAlt className="mr-2" />
               Logout

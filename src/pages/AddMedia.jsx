@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddMedia = () => {
   const [title, setTitle] = useState('');
@@ -8,40 +10,41 @@ const AddMedia = () => {
   const [description, setDescription] = useState('');
   const [type, setType] = useState('');
   const [owner, setOwner] = useState('');
-  const [alertMessage, setAlertMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    setIsLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const response = await axios.post('https://iwacu-kera-backend-1.onrender.com/api/media/create', {
+      await axios.post('https://iwacu-kera-backend-1.onrender.com/api/media/create', {
         title,
         link,
         description,
         type,
-        owner
+        owner,
       });
-      console.log('Media added successfully:', response.data);
-      setTitle('');
-      setLink('');
-      setDescription('');
-      setType('');
-      setOwner('');
-      setAlertMessage('Media added successfully');
-      navigate('/media');
+      toast.success('Media added successfully!', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setTimeout(() => {
+        navigate('/Med');
+      }, 3000);
     } catch (error) {
       console.error('Error adding media:', error);
-      let errorMessage = 'Error adding media. Please try again.';
-      if (error.response && error.response.data && error.response.data.message) {
-        errorMessage = `Error adding media: ${error.response.data.message}`;
-      } else if (error.message) {
-        errorMessage = `Error adding media: ${error.message}`;
-      }
-      setAlertMessage(errorMessage);
-    } finally {
-      setIsLoading(false);
+      toast.error('Error adding media. Please try again.', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
@@ -63,27 +66,27 @@ const AddMedia = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="link" className="block mb-2 font-semibold text-gray-700">Link</label>
-          <input
-            type="text"
+          <textarea
             id="link"
             name="link"
             value={link}
             onChange={(e) => setLink(e.target.value)}
+            rows="4"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
             placeholder="Enter link"
-          />
+          ></textarea>
         </div>
         <div className="mb-4">
           <label htmlFor="description" className="block mb-2 font-semibold text-gray-700">Description</label>
-          <textarea
+          <input
+            type="text"
             id="description"
             name="description"
-            rows="4"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
             placeholder="Enter description"
-          ></textarea>
+          />
         </div>
         <div className="mb-4">
           <label htmlFor="type" className="block mb-2 font-semibold text-gray-700">Type</label>
@@ -94,7 +97,7 @@ const AddMedia = () => {
             value={type}
             onChange={(e) => setType(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
-            placeholder="Enter type"
+            placeholder="Enter type (e.g., video, image, audio)"
           />
         </div>
         <div className="mb-4">
@@ -112,18 +115,13 @@ const AddMedia = () => {
         <button
           type="submit"
           className="px-4 py-2 text-white bg-green-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
-          disabled={isLoading}
         >
-          {isLoading ? 'Adding...' : 'Add New'}
+          Add New
         </button>
-        {alertMessage && (
-          <div className={`mt-4 p-2 rounded-lg ${alertMessage.includes('successfully') ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
-            {alertMessage}
-          </div>
-        )}
       </form>
+      <ToastContainer />
     </div>
   );
-};
+}
 
 export default AddMedia;

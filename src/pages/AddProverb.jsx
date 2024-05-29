@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer,toast } from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
 
 function AddProverb() {
   const [title, setTitle] = useState('');
@@ -24,17 +26,24 @@ function AddProverb() {
       setOrigin('');
       // Set success alert message
       setAlertMessage('Proverb added successfully');
+      // toast.success('successfully added')
+      toast.success('successfully added')
+      alert('kdkfdkf')
       // Navigate to proverb page
       navigate('/proverb');
     } catch (error) {
       console.error('Error adding proverb:', error);
+      // toast.error('error ')
+      toast.error('error');
       // Set error alert message
       setAlertMessage('Error adding proverb. Please try again.');
     }
   };
 
   return (
-    <div className="bg-gray-100 p-8 rounded-lg w-auto ml-20 mt-20 shadow-md">
+    <div className="flex justify-center items-center  h-screen ">
+      <div className="bg-blue-100 p-8 rounded-lg w-[60%] shadow-lg">
+      <ToastContainer/>
       <h1 className="text-2xl font-semibold mb-4">Add Proverb</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -85,6 +94,7 @@ function AddProverb() {
           </div>
         )}
       </form>
+      </div>
     </div>
   );
 }

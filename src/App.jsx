@@ -25,7 +25,7 @@ import LandingPage from './Components/LandingPage';
 import EditEvent from './pages/EditEvent';
 import EditProverb from './pages/EditProverb';
 import AddMedia from './pages/AddMedia';
-import EditMedia from './pages/EditMedi
+import EditMedia from './pages/EditMedia';
 import Inkomoko from './pages/Inkomoko';
 import Login from './pages/Login';
 import Imigani from './pages/Imigani';

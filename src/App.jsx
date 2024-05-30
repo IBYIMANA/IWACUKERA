@@ -74,7 +74,7 @@ const App = () => {
           <Route path="EditProverb/:id" element={<EditProverb/>} />
           <Route path='Med' element={<Med/>}/>
           <Route path='AddMedia' element={<AddMedia/>}/>
-          <Route path='EditMedia' element={<EditMedia/>}/>
+          <Route path='EditMedia/:id' element={<EditMedia/>}/>
 
         </Route>
       </Routes>

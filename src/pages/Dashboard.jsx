@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto'; 
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const [imiganiLength, setImiganiLength] = useState(0);
@@ -97,16 +98,20 @@ const Dashboard = () => {
     <div className="p-4">
       <div className="flex gap-8 justify-center mb-4 mr-1">
         <div className="bg-blue-400 h-40 w-60 shadow-lg rounded-lg flex justify-center items-center">
+<Link to='/proverb'>
           <h1 className="font-bold text-white text-4xl">{imiganiLength}</h1>
-          <span className="text-white text-xl ml-2">Imigani</span>
+          <span className="text-white text-xl ml-2">Imigani</span></Link>
         </div>
         <div className="bg-cyan-200 h-40 w-60 shadow-lg rounded-lg flex justify-center items-center">
+          <Link to='/activity'>
           <h1 className="font-bold text-gray-900 text-4xl">{eventsLength}</h1>
-          <span className="text-gray-900 text-xl ml-2">Events</span>
+          <span className="text-gray-900 text-xl ml-2">Events</span></Link>
         </div>
+        
         <div className="bg-red-900 h-40 w-60 shadow-lg rounded-lg flex justify-center items-center">
+        <Link to='/Med'>
           <h1 className="font-bold text-white text-4xl">{mediaLength}</h1>
-          <span className="text-white text-xl ml-2">Media</span>
+          <span className="text-white text-xl ml-2">Media</span></Link>
         </div>
       </div>
       <div className="bg-white p-4 h-[80%] w-full lg:w-2/3 mx-auto rounded-lg shadow-md">

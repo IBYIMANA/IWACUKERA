@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from "../../public/logo.png";
 import { FaTachometerAlt, FaBook, FaCalendarAlt, FaPhotoVideo, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { Button } from '@headlessui/react';
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate()
+const token = localStorage.getItem("token")
+console.log(token);
+
+const handleDelete = ()=>{
+  localStorage.removeItem("token");
+  navigate('/')
+
+}
 
   return (
     <div className="flex h-screen bg-green-100">
@@ -64,7 +74,8 @@ const SideBar = () => {
         </nav>
         <div className="mt-auto">
           <NavLink
-            to="/logout"
+            // to="/logout"
+            onc
             exact="true"
             className="flex items-center px-3 py-2 text-2xl text-black border-b rounded-lg shadow-lg hover:bg-blue-300 border-stone-100"
           >
@@ -140,14 +151,15 @@ const SideBar = () => {
             </NavLink>
           </nav>
           <div className="mt-auto">
-            <NavLink
-              to="/logout"
+            <Button
+              to=""
+              onClick={handleDelete}
               exact="true"
               className="flex items-center px-3 py-2 text-2xl text-black border-b rounded-lg shadow-lg hover:bg-blue-300 border-stone-100"
             >
               <FaSignOutAlt className="mr-2" />
               Logout
-            </NavLink>
+            /</Button>
           </div>
         </div>
       )}

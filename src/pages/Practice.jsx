@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Practice = () => {
   return (
     <div className=''>
-      <div className='flex flex-col gap-8 px-6 pb-6 mt-[8%] mb-4 rounded-lg shadow-md lg:flex-row bg-slate-100 sm:px-9'>
+      <div className='flex flex-col gap-8 px-12 py-12 pb-6  mb-4 rounded-lg shadow-md lg:flex-row bg-slate-100 sm:px-9'>
         <div className='w-full lg:w-1/2 h-64 sm:h-80 md:h-[35rem] mt-2'>
           <motion.img
             src="abakuze.jpg"

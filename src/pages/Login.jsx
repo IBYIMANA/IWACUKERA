@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { stringify } from 'postcss';
 
 export default function Login() {
     const [formData, setFormData] = useState({
@@ -38,6 +39,8 @@ export default function Login() {
             const response = await axios.post('https://iwacu-kera-backend-1.onrender.com/api/v1/admin/login', formData);
             console.log('Login successful:', response.data);
             setSuccessMessage('Login successful! Redirecting to dashboard...');
+            localStorage.setItem("token",response.data.token)
+            // localStorage.setItem("user", JSON.stringify())
             setTimeout(() => {
                 navigate('/dashboard');
             }, 2000);

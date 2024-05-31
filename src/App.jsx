@@ -29,6 +29,7 @@ import EditMedia from './pages/EditMedia';
 import Inkomoko from './pages/Inkomoko';
 import Login from './pages/Login';
 import Imigani from './pages/Imigani';
+import FeedBack from './pages/FeedBack';
 
 
 
@@ -75,6 +76,7 @@ const App = () => {
           <Route path='Med' element={<Med/>}/>
           <Route path='AddMedia' element={<AddMedia/>}/>
           <Route path='EditMedia' element={<EditMedia/>}/>
+          <Route path='feedback' element={<FeedBack/>}/>
 
         </Route>
       </Routes>

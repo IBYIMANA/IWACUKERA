@@ -1,4 +1,4 @@
-import React useState } from 'react';
+import  {useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from "../../public/logo.png";
 import { FaTachometerAlt, FaBook, FaCalendarAlt, FaPhotoVideo, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';

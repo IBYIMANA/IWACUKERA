@@ -15,7 +15,7 @@ const Imikino = () => {
         >
           Imikino gakondo yo mu Rwanda
         </motion.h1>
-        <div className='justify-between px-4 rounded-lg shadow-lg bg-red-50 md:px-32 '>
+        <div className='justify-between px-2 rounded-lg md:px-32 '>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/urukiramende.jpeg"
@@ -44,7 +44,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='justify-between px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='justify-between px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/kumasha1.jpeg"
@@ -73,7 +73,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/ibyino.jpeg"
@@ -88,7 +88,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/kumasha.png"
@@ -103,7 +103,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/igisoror.jpeg"
@@ -118,7 +118,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/umuduri.jpg"
@@ -133,7 +133,7 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
             <motion.img
               src="../public/umugozi.jpeg"

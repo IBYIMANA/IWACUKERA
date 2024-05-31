@@ -60,6 +60,7 @@ const Contact = () => {
   };
 
   return (
+
     <div className='px-4 py-[10%] bg-gray-50 min-h-screen'>
       <ToastContainer />
       <h1 className='text-4xl font-extrabold text-center mb-10'>Twandikire Udusangize ibitekerezo</h1>
@@ -110,6 +111,8 @@ const Contact = () => {
               className='bg-blue-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500'>
              Ohereza Ubutumwa
             </button>
+
+    
           </form>
         </div>
       </div>

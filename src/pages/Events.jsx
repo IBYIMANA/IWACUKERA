@@ -27,6 +27,7 @@ const Events = () => {
 
     return (
         <div className="min-h-screen bg-gray-50">
+
            <div className='relative mt-10 mb-0'>
         <img src="../public/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
         <div className='absolute inset-0 flex flex-col items-center justify-center text-white p-4 bg-black bg-opacity-50'>
@@ -37,6 +38,7 @@ const Events = () => {
       </div>
             <div className="container mx-auto px-4 py-8">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Ibitaramo bigiye kuzaba</h1>
+
                 {loading ? (
                     <div className="flex justify-center items-center h-64">
                         <ClipLoader size={50} color="#3498db" />
@@ -44,9 +46,9 @@ const Events = () => {
                 ) : error ? (
                     <p className="text-center text-red-700">{error}</p>
                 ) : eventList.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {eventList.map(event => (
-                            <div key={event._id} className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            <div key={event._id} className="p-6 transition-shadow duration-200 bg-white rounded-lg shadow-md hover:shadow-lg">
                                 <h2 className="mb-2 text-xl font-semibold text-gray-900">{event.title}</h2>
                                 <p className="text-gray-700">{event.description}</p>
                                 <p className="mt-2 text-gray-500">{new Date(event.date).toLocaleDateString()}</p>
@@ -58,6 +60,7 @@ const Events = () => {
                 )}
             </div>
         </div>
+        
     );
 };
 

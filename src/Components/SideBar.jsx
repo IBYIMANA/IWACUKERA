@@ -61,10 +61,22 @@ const SideBar = () => {
             <FaPhotoVideo className="mr-2" />
             Media
           </NavLink>
+          <NavLink
+            to="/feedback"
+            exact="true"
+            className={({ isActive }) =>
+              isActive
+                ? 'flex items-center text-white bg-blue-300 rounded-lg px-3 py-2'
+                : 'flex items-center text-black hover:bg-blue-300 w-full text-1xl border-b border-stone-100 shadow-lg rounded-lg px-3 py-2'
+            }
+          >
+            <FaBook className="mr-2" />
+           Comments
+          </NavLink>
         </nav>
         <div className="mt-auto">
           <NavLink
-            to="/logout"
+            to="/"
             exact="true"
             className="flex items-center px-3 py-2 text-2xl text-black border-b rounded-lg shadow-lg hover:bg-blue-300 border-stone-100"
           >

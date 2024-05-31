@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { ClipLoader } from 'react-spinners';
 
 const Events = () => {
     const [eventList, setEventList] = useState([]);
@@ -27,13 +27,22 @@ const Events = () => {
 
     return (
         <div className="min-h-screen bg-gray-50">
-         <div className='py-7'>
-            <img src="../public/event.png" alt="" className='h-[10%] w-full' />
-         </div>
-            <div className="container px-4 py-8 mx-auto">
-                <h1 className="mb-8 text-3xl font-bold text-center text-gray-800"> Upcoming Events</h1>
+
+           <div className='relative mt-10 mb-0'>
+        <img src="../public/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
+        <div className='absolute inset-0 flex flex-col items-center justify-center text-white p-4 bg-black bg-opacity-50'>
+          <h1 className='text-4xl font-extrabold animate-title'>Muratumiwe</h1>
+          <p className='text-xl mt-2 animate-subtitle'>Mubitaramo bigiye kuzaba bijyanye n'umuco nyarwanda</p>
+          <p className='text-lg mt-2 animate-subtitle'>Harimo Inganzo ngari, kwita Izina, Urukerereza hamwe n'ibindi</p>
+        </div>
+      </div>
+            <div className="container mx-auto px-4 py-8">
+                <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Ibitaramo bigiye kuzaba</h1>
+
                 {loading ? (
-                    <p className="text-center text-gray-700">Loading...</p>
+                    <div className="flex justify-center items-center h-64">
+                        <ClipLoader size={50} color="#3498db" />
+                    </div>
                 ) : error ? (
                     <p className="text-center text-red-700">{error}</p>
                 ) : eventList.length > 0 ? (

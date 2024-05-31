@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Abami = () => {
     return (
-        <div className='bg-slate-200'>
+        <div className='bg-white'>
             <SubNav />
 
             <div className='min-h-screen py-40 px-11'>
-                <div className='px-6 py-20 rounded-md shadow-lg sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50'>
+                <div className='px-6 py-20 rounded-md  sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50'>
                     <motion.h1
                         initial={{ opacity: 0, y: -100 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -194,8 +194,8 @@ const Abami = () => {
                 </div>
 
 
-                <div className='flex flex-col gap-5 px-6 mt-10 sm:gap-16 md:gap-20 lg:gap-5 sm:px-12 md:px-24 lg:px-36 xl:px-48 bg-slate-50 '>
-                    <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 lg:flex-row sm:px-9 gap-7'>
+                <div className='flex flex-col gap-5 px-6 mt-10 sm:gap-16 md:gap-20 lg:gap-5 sm:px-12    '>
+                    <div className='flex flex-col mt-8  rounded-lg   lg:flex-row sm:px-9 gap-7'>
                         <img src="../public/umwami1.jpg" alt="Gihanga I Ngomijana" className='w-1/2 sm:w-1/2' />
                         <div className='p-4'>
                             <h2 className='mb-2 font-medium'>AMATEKA YA Gihanga I Ngomijana (1091-1124)</h2>
@@ -203,46 +203,46 @@ const Abami = () => {
                             <h2 className='mt-2 mb-2 font-medium text-sky-400'>Gihanga yarongoye Abagore benshi</h2>
                             <p>Ikindi amateka garagaza, avuga ko Gihanga yagiye abyara abana batandukanye badahuje ba nyina kuko nawe yari afite abagore benshi nk'uko byari bisanzwe bimenyerewe mu Rwanda rwo ha mbere</p>
                             <Link to='/gihanga'>
-                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
+                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl  hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 h-96 lg:flex-row sm:px-9 gap-7'>
+                    <div className='flex flex-col mt-8  rounded-lg   h-96 lg:flex-row sm:px-9 gap-7'>
                         <img src="/gahima.jpg" alt="Kanyarwanda I Gahima" className='w-1/2 sm:w-1/2 ' />
                         <div className='p-4'>
                             <h2 className='mt-20 mb-2 font-medium'>AMATEKA YA Kanyarwanda I Gahima (1124-1157)</h2>
                             <p className=''>Kanyarwanda Gahima waje asimbuye se ku ngoma akaba ngo ari yo mpamvu yahawe ririya zina rya Kanyarwanda kubera inshingano yari asigiwe na se Gihanga zo gukomeza kwagura ubutaka yari arazwe</p>
                             <Link to='/gahima'>
-                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
+                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl  hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 lg:flex-row sm:px-9 gap-7 '>
+                    <div className='flex flex-col mt-8  rounded-lg   lg:flex-row sm:px-9 gap-7 '>
                         <img src="/yuhi.jpg" alt="Yuhi Musindi" className='w-full ' />
                         <div className='p-4'>
                             <h2 className='mb-4 font-medium'>AMATEKA YA Yuhi Musindi (1157-1180)</h2>
                             <p>Umwami wakurikiye Kanyarwanda ku itonde ry’abami b’umushumi yitwa Yuhi Musindi akaba yaranitwaga Yuhi ry’i Gara.Aka gace ka Gara rero ngo bishoboka ko baba barashakaga kuvuga Ngara ya Rubungo yari iherereye mu karere ka Bwanacyambwe nkuko ubushakashatsi bubigaragaza. Uyu Mwami niwe mukurambere w’ubwoko bw’ Abasindi ari naho ubu bwoko bukomora iryo zina nkuko benshi mu buzukuru ba Gihanga bagiye batanga amazina y’ubwoko bubakomokaho.</p>
                             <p>Umwami Yuhi V Musinga ni umwe mu bayoboye u Rwanda wagize inyeshyamba z’abasirikari n’ubwo yaje gutakaza intambara n’abazungu bashakaga colonisation y’u Rwanda. Abasirikari be bazwi nk’inyamibwa barwanye intambara yo kurwanya abazungu n’ubwo batakaje.</p>
                             <Link to='/yuhi'>
-                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black'>Komeza Usome</button>
+                                <button className='w-32 h-10 mt-4 text-white bg-green-600 rounded-lg shadow-xl  hover:text-black'>Komeza Usome</button>
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col mt-8 bg-gray-100 rounded-lg shadow-lg hover:bg-blue-100 lg:flex-row sm:px-9 gap-7'>
+                    <div className='flex flex-col mt-8 rounded-lg  lg:flex-row sm:px-9 gap-7'>
 
 
                             <img src="/abami.jpeg" alt="" className='w-1/2 sm:w-1/2' />
                             <div>
                                 <h2 className='mt-5 mb-5 font-medium'>AMATEKA YA Yuhi II Gahima (1444-1477)</h2>
                                 <p>Umwami Yuhi II Gahima ni mwene Sekarongoro na Matama ya Bigega. Na we azwiho kuba yarashatse abagore benshi ariko amateka atugaragariza babiri gusa barimo Nyirangabo za Nyantabana na Nyankaka wa Samukende, aho babyaranye abana bagera ku munani.</p>
-                                <a href="https://igihe.com/umuco/article/abami-10-bashatse-abagore-benshi-mu-mateka-y-u-rwanda">
-                                    <button className='w-32 h-10 mb-4 ml-20 text-white bg-green-600 rounded-lg shadow-xl hover:bg-yellow-400 hover:text-black mt-7'>Komeza</button>
-                                </a>
+                                <Link to='/gahima'>
+                                    <button className='w-32 h-10 mb-4 ml-20 text-white bg-green-600 rounded-lg shadow-xl  hover:text-black mt-7'>Komeza</button>
+                                </Link>
                             </div>
                         </div>
                 </div>
             </div>
-            <div className='px-20 bg-gray-200 '>
+            <div className='px-20 bg-gray-50 '>
         <h1 className='mb-4 text-4xl font-extrabold text-center capitalize'> Abami 10 bashatse abagore benshi mu mateka y’u Rwanda</h1>
         <p className='mb-4'> Ikizwi neza ni uko urushako rw’Abami b’u Rwanda rwagengwa n’Abiru bifashishije indagu. Hari igihe umwami yashakaga abagore benshi bo guhishira umugore w’ingabwa ari na we watangwaga n’indagu nk’uzavamo umugabekazi uzabyarira u Rwanda umwami ngo hato atamenyekana hakiri kare.</p>
         <h1  className='mt-4 mb-4 text-2xl font-medium text-center'>Umwami Yuhi V Musinga</h1>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Practice = () => {
   return (
     <div className=''>
-      <div className='flex flex-col gap-8 px-12 py-12 pb-6  mb-4 rounded-lg shadow-md lg:flex-row bg-slate-100 sm:px-9'>
+      <div className='flex flex-col gap-8 px-6 pb-6 mt-[8%] mb-4  lg:flex-row  sm:px-9'>
         <div className='w-full lg:w-1/2 h-64 sm:h-80 md:h-[35rem] mt-2'>
           <motion.img
             src="abakuze.jpg"
@@ -44,7 +44,7 @@ const Practice = () => {
           </h1>
 
           <Link to="/inkomoko">
-            <button className='w-full h-10 mt-6 mb-4 text-white bg-green-600 rounded-lg shadow-xl sm:w-32  hover:bg-yellow-400 hover:text-black animate-bounce'>
+            <button className='w-full h-10 mt-6 mb-4 text-white bg-green-600 rounded-lg shadow-xl sm:w-32   hover:text-black '>
 
               Komeza Usome
             </button>
@@ -65,10 +65,10 @@ const Practice = () => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center px-6 pb-6 mb-4 rounded-lg shadow-md lg:flex-row bg-slate-50 sm:px-9 gap-7'>
+      <div className='flex flex-col justify-center px-16 py-12 pb-4 mb-4   lg:flex-row  sm:px-9 gap-7'>
         <img src="/connect.jpg" alt="" className='object-cover w-full rounded-lg h-96 lg:w-1/2 sm:h-80 md:h-96' />
         <div className='w-full lg:w-1/2 '>
-          <h1 className='mb-4 text-2xl font-bold text-center sm:text-3xl md:text-4xl mt-7'>
+          <h1 className='mb-4 text-2xl font-bold text-center sm:text-3xl md:text-4xl mt-3'>
             ITUMANAHO RYO HAMBERE
           </h1>
           <p className='text-center  text-1xl sm:text-lg'>
@@ -82,7 +82,7 @@ const Practice = () => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center px-6 pb-6 mb-4 rounded-lg shadow-md lg:flex-row bg-slate-50 sm:px-9 gap-7'>
+      <div className='flex flex-col justify-center px-6 pb-6 mb-4 rounded-md shadow-md lg:flex-row  sm:px-9 gap-7'>
         <div className='w-full lg:w-1/2'>
           <h1 className='mb-4 text-2xl font-bold text-center sm:text-3xl md:text-4xl mt-7'>
             UKO BAKORAGA INGENDO

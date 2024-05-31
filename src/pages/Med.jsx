@@ -5,24 +5,35 @@ import { FaEdit, FaTrash } from 'react-icons/fa';
 
 function Med() {
   const [mediaList, setMediaList] = useState([]);
-    
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-      fetchMediaList();
+    fetchMediaList();
   }, []);
 
   const fetchMediaList = async () => {
-      try {
-          console.log('Fetching media list');
-          const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/media/list');
-          console.log('API Response:', response.data);
-          setMediaList(response.data);
-      } catch (error) {
-          console.error('Error fetching data:', error);
-          setError('Failed to fetch media data');
-      } finally {
-          setLoading(false);
-      }
+    try {
+      console.log('Fetching media list');
+      const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/media/list');
+      console.log('API Response:', response.data);
+      setMediaList(response.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setError('Failed to fetch media data');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`https://iwacu-kera-backend-1.onrender.com/api/media/delete/${id}`);
+      setMediaList(mediaList.filter(media => media._id !== id));
+    } catch (error) {
+      console.error('Error deleting media:', error);
+      setError('Failed to delete media');
+    }
   };
 
   return (
@@ -58,8 +69,8 @@ function Med() {
                     <td className="p-2 border border-black">{media.type}</td>
                     <td className="p-2 border border-black">{media.owner}</td>
                     <td className="justify-between p-2 border border-black">
-                      <Link to={`/EditMedia/${media.id}`}><button className="mr-2"><FaEdit /></button></Link>
-                      <button ><FaTrash /></button>
+                      <Link to={`/EditMedia/${media._id}`}><button className="mr-2"> <FaEdit /></button> </Link>
+                      <button onClick={() => handleDelete(media._id)} className="text-red-500 hover:text-red-700"><FaTrash /></button>
                     </td>
                   </tr>
                 ))}

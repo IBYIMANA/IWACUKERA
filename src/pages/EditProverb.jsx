@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+  import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
@@ -62,9 +62,9 @@ function EditProverb() {
   };
 
   return (
-    <div className="flex justify-center items-center  h-screen">
+    <div className="flex items-center justify-center h-screen">
       <div className="bg-blue-100 p-8 rounded-lg w-[60%] shadow-lg">
-        <h1 className="text-2xl font-semibold mb-4">Edit Proverb</h1>
+        <h1 className="mb-4 text-2xl font-semibold">Edit Proverb</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="title" className="block mb-2 font-semibold text-gray-700">Title</label>
@@ -74,7 +74,7 @@ function EditProverb() {
               name="title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
               placeholder="Enter title"
             />
           </div>
@@ -86,7 +86,7 @@ function EditProverb() {
               rows="4"
               value={content}
               onChange={(e) => setContent(e.target.value)}
-              className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
               placeholder="Enter content"
             ></textarea>
           </div>
@@ -98,7 +98,7 @@ function EditProverb() {
               name="origin"
               value={origin}
               onChange={(e) => setOrigin(e.target.value)}
-              className="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400"
               placeholder="Enter origin"
             />
           </div>

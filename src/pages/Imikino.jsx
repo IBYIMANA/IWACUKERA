@@ -15,8 +15,8 @@ const Imikino = () => {
         >
           Imikino gakondo yo mu Rwanda
         </motion.h1>
-        <div className='justify-between px-4 rounded-lg shadow-lg bg-red-50 md:px-32 '>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='justify-between px-2 rounded-lg md:px-32 '>
+          <div className='flex flex-col gap-8 rounded-lg shadow-sm md:flex-row  '>
             <motion.img
               src="../public/urukiramende.jpeg"
               alt=""
@@ -44,15 +44,15 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='justify-between px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='justify-between px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/kumasha1.jpeg"
               alt=""
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className='w-full px-6 pt-6 pb-6 rounded-lg shadow-lg md:w-1/2'
+              className='w-full px-6 pt-6 pb-6 rounded-lg shadow-md md:w-1/2'
             />
             <div>
               <motion.h1
@@ -73,12 +73,12 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/ibyino.jpeg"
               alt=""
-              className='w-full h-auto px-6 pt-6 pb-6 rounded-lg shadow-lg md:w-1/2'
+              className='w-full h-auto px-6 pt-6 pb-6 rounded-lg shadow-md md:w-1/2'
             />
             <div>
               <h1 className='mt-4 mb-4 text-3xl font-bold md:mt-10 md:mb-10'>IMBYINO</h1>
@@ -88,8 +88,8 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/kumasha.png"
               alt=""
@@ -103,8 +103,8 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/igisoror.jpeg"
               alt=""
@@ -118,8 +118,8 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/umuduri.jpg"
               alt=""
@@ -133,8 +133,8 @@ const Imikino = () => {
             </div>
           </div>
         </div>
-        <div className='px-4 rounded-lg shadow-lg bg-red-50 md:px-32 mt-7'>
-          <div className='flex flex-col gap-8 rounded-lg shadow-lg md:flex-row bg-gray-50 '>
+        <div className='px-4 rounded-lg md:px-32 mt-7'>
+          <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
               src="../public/umugozi.jpeg"
               alt=""

@@ -52,6 +52,7 @@ const Events = () => {
                                 <h2 className="mb-2 text-xl font-semibold text-gray-900">{event.title}</h2>
                                 <p className="text-gray-700">{event.description}</p>
                                 <p className="mt-2 text-gray-500">{new Date(event.date).toLocaleDateString()}</p>
+                                <p className="text-gray-700">{event.image}</p>
                             </div>
                         ))}
                     </div>

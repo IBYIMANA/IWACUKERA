@@ -23,31 +23,31 @@ const Museum = () => {
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1'>
-          <img src="../public/nyanza.PNG" />
-          <img src="../public/King.jpg" />
+          <img src="/nyanza.PNG" />
+          <img src="/King.jpg" />
 
         </div>
       </div>
       <h1 className='mb-5 text-4xl font-bold text-center -mt-14'>Ibikoresho by'umuco</h1>
       <div className='grid justify-around grid-cols-1 gap-10 px-4 lg:grid-cols-4 md:grid-cols-2'>
         <div className='justify-center py-6 bg-white rounded-lg shadow-sm '>
-          <img src="../public/uruswo.jpg"  />
+          <img src="/uruswo.jpg"  />
           <p className='py-3 text-2xl font-bold text-center '>URUSYO</p>
           <p className=' ml-7 mt-7'>Urusyo rusobanura ibuye, rimeze nk'uruziga useraho (rwo gusya ingano), uruziga rukomey . Mu kwagura ikintu cyizengurutse cyane ibyatsi cyangwa uruziga rwa foromaje.</p>
         </div>
         <div className='justify-center py-6 bg-white rounded-lg shadow-sm '>
-          <img src="../public/ingobyi.jpg"  />
+          <img src="/ingobyi.jpg"  />
           <p className='py-6 text-2xl font-bold text-center'>INGOBYI</p>
           <p className='ml-7'>Ingobyi ya Kinyarwanda ni igikoresho gifite ibigwi n’amateka ahambaye mu muco wu Rwanda, kikaba ari kimwe mu bigaragaza intekerezo z’ihangabuhanga abantu b'Abanyarwanda bari bakungahayeho aho yabafashaga guhanga ibikoresho .</p>
         </div>
         <div className='justify-center py-6 bg-white   rounded-lg shadow-sm'>
-          <img src="../public/inkongoro.jpg"  />
+          <img src="/inkongoro.jpg"  />
           <p className='py-6 text-2xl font-bold text-center'>IGISABO</p>
           <p className='ml-7 '> Igisabo ni igikoresho cyubashywe mu muco nyarwanda kuva kera, cyifashishwa mu gikorwa cyo ‘gucunda amata’, amata nayo akaba ari ikinyobwa gifite intungamubiri nyinshi ku mubiri w’umuntu.</p>
           
         </div>
         <div className='justify-center py-6 bg-white rounded-lg shadow-sm '>
-          <img src="../public/igicuma.webp" className=" h-60 " />
+          <img src="/igicuma.webp" className=" h-60 " />
           <p className='py-6 text-2xl font-bold text-center'>UDUCUMA</p>
           <p className='ml-7 mt-1'> mumuco nyarwanda iyo umuntu yagusuraga wamyakirizaga icyokunywa nkinzoga ,amata ibi nibikoresho bakoreshaga banyweramo inzoga ,banazibikamo ibyo bita kuzitara kugirango zishye. </p>
         </div>

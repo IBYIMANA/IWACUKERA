@@ -15,7 +15,7 @@ const FeedBack = () => {
   const fetchFeedbackList = async () => {
     try {
       const response = await axios.get('https://iwacu-kera-backend-1.onrender.com/api/contacts/lists');
-      setFeedbackList(response.data.task);
+      setFeedbackList(response.data.tasks); // Corrected to response.data.tasks
     } catch (error) {
       setError('Failed to fetch feedback data');
     } finally {

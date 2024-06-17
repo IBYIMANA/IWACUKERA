@@ -51,9 +51,7 @@ const Museum = () => {
           <p className='py-6 text-2xl font-bold text-center'>UDUCUMA</p>
           <p className='ml-7 mt-1'> mumuco nyarwanda iyo umuntu yagusuraga wamyakirizaga icyokunywa nkinzoga ,amata ibi nibikoresho bakoreshaga banyweramo inzoga ,banazibikamo ibyo bita kuzitara kugirango zishye. </p>
         </div>
-        <a href="https://www.google.com/search?q=ibikoresho%20bya%20kinyarwanda%20murukari&udm=2&uds=ADvngMg6Q0mwSNoULKN8tZh6vlSyTpTK5inzZAUgd6JsQ1OV4Scs27FSbZp7GRanKKwWi6Qw56kc&tbs=rimg:CZeOwNvG6PlbYToTiyR8K7nYsgIAwAIA2AIA4AIA&cs=1&hl=en&sa=X&ved=0CBoQuIIBahcKEwjIqrD12oKGAxUAAAAAHQAAAAAQDw&biw=1536&bih=738&dpr=1.25#vhid=o-lN4ifn3q8WQM&vssid=mosaic">
-          <button className='w-32 h-10 text-white bg-green-600 rounded-lg shadow-xl ml-96  hover:text-black'>Read More</button>
-        </a>
+      
       </div>
     </div>
   )

@@ -29,7 +29,7 @@ const Events = () => {
         <div className="min-h-screen bg-gray-50">
 
            <div className='relative mt-10 mb-0'>
-        <img src="../public/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
+        <img src="/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
         <div className='absolute inset-0 flex flex-col items-center justify-center text-white p-4 bg-black bg-opacity-50'>
           <h1 className='text-4xl font-extrabold animate-title'>Muratumiwe</h1>
           <p className='text-xl mt-2 animate-subtitle'>Mubitaramo bigiye kuzaba bijyanye n'umuco nyarwanda</p>

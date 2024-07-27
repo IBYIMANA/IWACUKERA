@@ -36,7 +36,7 @@ export default function Login() {
         }
 
         try {
-            const response = await axios.post('https://iwacu-kera-backend-1.onrender.com/api/v1/admin/login', formData);
+            const response = await axios.post( 'https://iwacu-kera-backend-1.onrender.com/api/v1/admin/login', formData);
             console.log('Login successful:', response.data);
             setSuccessMessage('Login successful! Redirecting to dashboard...');
             localStorage.setItem("token",response.data.token)

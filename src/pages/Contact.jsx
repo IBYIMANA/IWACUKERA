@@ -65,7 +65,7 @@ const Contact = () => {
       <ToastContainer />
       <h1 className='text-4xl font-extrabold text-center mb-10'>Twandikire Udusangize ibitekerezo</h1>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-20'>
-        <img src='../public/imigongo1.jpg' alt='Imigongo' className='w-full lg:w-1/2 rounded-lg shadow-md' />
+        <img src='/imigongo1.jpg' alt='Imigongo' className='w-full lg:w-1/2 rounded-lg shadow-md' />
         <div className='w-full lg:w-1/2'>
           <form onSubmit={handleSubmit}>
             <div className='mb-6'>

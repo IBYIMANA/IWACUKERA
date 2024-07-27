@@ -6,6 +6,7 @@ const Dashboard = () => {
   const [imiganiLength, setImiganiLength] = useState(0);
   const [eventsLength, setEventsLength] = useState(0);
   const [mediaLength, setMediaLength] = useState(0);
+  const [feedbackLength, setFeedbackLength] = useState(0);
 
   useEffect(() => {
     fetchCounts();
@@ -16,12 +17,14 @@ const Dashboard = () => {
       const [imiganiResponse, eventsResponse, mediaResponse] = await Promise.all([
         axios.get('https://iwacu-kera-backend-1.onrender.com/api/pro/list'),
         axios.get('https://iwacu-kera-backend-1.onrender.com/api/events/listevents'),
-        axios.get('https://iwacu-kera-backend-1.onrender.com/api/media/list')
+        axios.get('https://iwacu-kera-backend-1.onrender.com/api/media/list'),
+         axios.get('https://iwacu-kera-backend-1.onrender.com/api/contacts/lists')
       ]);
 
       setImiganiLength(imiganiResponse.data.length);
       setEventsLength(eventsResponse.data.task.length); 
       setMediaLength(mediaResponse.data.length);
+      setFeedbackLength(feedbackResponse.data.length);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -30,24 +33,30 @@ const Dashboard = () => {
   return (
     <div className="p-6">
      
-      <div className="flex gap-8 justify-center  mt-20">
+      <div className="flex gap-8 ml-28  mt-20 ">
         
-        <div className="bg-blue-400 h-40 w-60 shadow-sm rounded-lg flex flex-col justify-center items-center">
+        <div className="bg-blue-400 h-40 w-72 shadow-sm rounded-lg flex flex-col justify-center items-center">
           <Link to='/proverb' className="text-center">
             <h1 className="font-bold text-white text-4xl">+{imiganiLength}</h1>
             <span className="text-white text-xl">Imigani</span>
           </Link>
         </div>
-        <div className="bg-cyan-200 h-40 w-60 shadow-sm rounded-lg flex flex-col justify-center items-center">
+        <div className="bg-cyan-200 h-40 w-72 shadow-sm rounded-lg flex flex-col justify-center items-center">
           <Link to='/activity' className="text-center">
             <h1 className="font-bold text-gray-900 text-4xl">+{eventsLength}</h1>
             <span className="text-gray-900 text-xl">Events</span>
           </Link>
         </div>
-        <div className="bg-red-900 h-40 w-60 shadow-sm rounded-lg flex flex-col justify-center items-center">
+        <div className="bg-red-900 h-40 w-72 shadow-sm rounded-lg flex flex-col justify-center items-center">
           <Link to='/Med' className="text-center">
             <h1 className="font-bold text-white text-4xl">+{mediaLength}</h1>
             <span className="text-white text-xl">Media</span>
+          </Link>
+        </div>
+        <div className="bg-blue-900 h-40 w-64 shadow-sm rounded-lg flex flex-col justify-center items-center">
+          <Link to='/feedback' className="text-center">
+            <h1 className="font-bold text-white text-4xl">+2{feedbackLength}</h1>
+            <span className="text-white text-xl">FeedBack</span>
           </Link>
         </div>
       </div>

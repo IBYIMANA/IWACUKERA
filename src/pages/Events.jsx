@@ -29,14 +29,14 @@ const Events = () => {
         <div className="min-h-screen bg-gray-50">
 
            <div className='relative mt-10 mb-0'>
-        <img src="../public/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
+        <img src="/events.png" alt="Event Banner" className='h-[10%] w-full object-cover' />
         <div className='absolute inset-0 flex flex-col items-center justify-center text-white p-4 bg-black bg-opacity-50'>
           <h1 className='text-4xl font-extrabold animate-title'>Muratumiwe</h1>
           <p className='text-xl mt-2 animate-subtitle'>Mubitaramo bigiye kuzaba bijyanye n'umuco nyarwanda</p>
           <p className='text-lg mt-2 animate-subtitle'>Harimo Inganzo ngari, kwita Izina, Urukerereza hamwe n'ibindi</p>
         </div>
       </div>
-            <div className="container mx-auto px-4 py-8">
+            <div className="container px-4 py-8 max-w-7xl mx-auto">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Ibitaramo bigiye kuzaba</h1>
 
                 {loading ? (
@@ -51,7 +51,9 @@ const Events = () => {
                             <div key={event._id} className="p-6 transition-shadow duration-200 bg-white rounded-lg shadow-md hover:shadow-lg">
                                 <h2 className="mb-2 text-xl font-semibold text-gray-900">{event.title}</h2>
                                 <p className="text-gray-700">{event.description}</p>
-                                <p className="mt-2 text-gray-500">{new Date(event.date).toLocaleDateString()}</p>
+                                <p className="mt-2 text-gray-500 font-medium mb-2">{new Date(event.date).toLocaleDateString()}</p>
+                                <img src={event.image} alt='' className="text-gray-700" />
+                                <p className="text-gray-700 mt-4"> Aho biribubere: <span className='font-medium'>{event.location}</span></p>
                             </div>
                         ))}
                     </div>

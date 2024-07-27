@@ -18,7 +18,7 @@ const Imikino = () => {
         <div className='justify-between px-2 rounded-lg md:px-32 '>
           <div className='flex flex-col gap-8 rounded-lg shadow-sm md:flex-row  '>
             <motion.img
-              src="../public/urukiramende.jpeg"
+              src="/urukiramende.jpeg"
               alt=""
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ const Imikino = () => {
         <div className='justify-between px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/kumasha1.jpeg"
+              src="/kumasha1.jpeg"
               alt=""
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -76,7 +76,7 @@ const Imikino = () => {
         <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/ibyino.jpeg"
+              src="/ibyino.jpeg"
               alt=""
               className='w-full h-auto px-6 pt-6 pb-6 rounded-lg shadow-md md:w-1/2'
             />
@@ -91,7 +91,7 @@ const Imikino = () => {
         <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/kumasha.png"
+              src="/kumasha.png"
               alt=""
               className='w-full h-auto px-6 pt-6 pb-6 rounded-lg shadow-lg md:w-1/2'
             />
@@ -106,7 +106,7 @@ const Imikino = () => {
         <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/igisoror.jpeg"
+              src="/igisoror.jpeg"
               alt=""
               className='  rounded-lg shadow-lg px-6 pt-6 pb-6 w-[273rem] h-96'
             />
@@ -121,7 +121,7 @@ const Imikino = () => {
         <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/umuduri.jpg"
+              src="/umuduri.jpg"
               alt=""
               className=' md:w-1/2 h-96 w-[273rem] rounded-lg shadow-lg px-6 pt-6 pb-6'
             />
@@ -136,7 +136,7 @@ const Imikino = () => {
         <div className='px-4 rounded-lg md:px-32 mt-7'>
           <div className='flex flex-col gap-8 rounded-lg shadow-md md:flex-row  '>
             <motion.img
-              src="../public/umugozi.jpeg"
+              src="/umugozi.jpeg"
               alt=""
               className='w-full h-auto px-6 pt-6 pb-6 rounded-lg shadow-lg md:w-1/2'
             />

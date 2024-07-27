@@ -9,9 +9,9 @@ const SubNav = () => {
 
      
      <NavLink to={'/history/museum'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'}>MUSEUM</NavLink>
-     <NavLink to={'/history/abami'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >ABAMI</NavLink>
-     <NavLink to={'/history/imikino'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >IMIKINO</NavLink>
-     <NavLink to={'/history/imigani'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >IMIGANI</NavLink>
+     <NavLink to={'/history/abami'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >King</NavLink>
+     <NavLink to={'/history/imikino'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >Activity</NavLink>
+     <NavLink to={'/history/imigani'} exact="true" className={({ isActive }) => isActive ? 'text-white bg-blue-300 px-3 py-2 rounded-md' : 'text-black px-3 py-2 rounded-md font-bold'} >Proverb</NavLink>
    </div>
     </div>
   )

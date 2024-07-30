@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import Practice from '../pages/Practice';
 import './Home.css'; // Import the CSS file for custom styles
 

@@ -14,7 +14,6 @@ import Med from './pages/Med';
 import Proverb from './pages/Proverb';
 import Activity from './pages/Activity';
 import Dashboard from './pages/Dashboard';
-
 import AddProverb from './pages/AddProverb';
 import AddEvent from './pages/AddEvent';
 import Contact from './pages/Contact';
@@ -31,21 +30,18 @@ import Login from './pages/Login';
 import Imigani from './pages/Imigani';
 import FeedBack from './pages/FeedBack';
 
-
-
-
 const App = () => {
   return (
     <Router>
       <Routes>
         {/* Routes for the main website */}
-        <Route  element={<AllPages />}>
-        <Route path="/" element={<LandingPage/>} />
-          <Route path='/'element={<Home />} />
+        <Route path="/" element={<AllPages />}>
+          <Route index element={<LandingPage />} />
+          <Route path="home" element={<Home />} />
           <Route path="events" element={<Events />} />
           <Route path="media" element={<Media />} />
           <Route path="practical" element={<Practice />} />
-          <Route path="Contact" element={<Contact/>} />
+          <Route path="contact" element={<Contact />} />
           <Route path="history" element={<Museum />} />
           <Route path="history/museum" element={<Museum />} />
           <Route path="history/abami" element={<Abami />} />
@@ -53,35 +49,27 @@ const App = () => {
           <Route path="history/imikino" element={<Imikino />} />
           <Route path="auth/adminLogin" element={<AdminLogin />} />
           <Route path="gihanga" element={<Gihanga />} />
-          <Route path="gahima" element={<Gahima/>} />
-          <Route path="yuhi" element={<Yuhi/>} />
-          <Route path="inkomoko" element={<Inkomoko/>} />
-       
-
+          <Route path="gahima" element={<Gahima />} />
+          <Route path="yuhi" element={<Yuhi />} />
+          <Route path="inkomoko" element={<Inkomoko />} />
         </Route>
-          <Route path="login" element={<Login/>} />
+        
+        <Route path="login" element={<Login />} />
 
         {/* Routes for the admin panel */}
-        <Route path="/" element={<LayoutAdmin />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="admin" element={<LayoutAdmin />}>
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="med" element={<Med />} />
           <Route path="proverb" element={<Proverb />} />
           <Route path="activity" element={<Activity />} />
-          <Route path="Events/:id" element={<Events />} />
-
+          <Route path="events/:id" element={<Events />} />
           <Route path="addproverb" element={<AddProverb />} />
           <Route path="addevent" element={<AddEvent />} />
-          <Route path="EditEvent/:id" element={<EditEvent />} />
-          <Route path="EditProverb/:id" element={<EditProverb/>} />
-          <Route path='Med' element={<Med/>}/>
-          <Route path='AddMedia' element={<AddMedia/>}/>
-
-          
-          <Route path='feedback' element={<FeedBack/>}/>
-
-          <Route path='EditMedia/:id' element={<EditMedia/>}/>
-
-
+          <Route path="editevent/:id" element={<EditEvent />} />
+          <Route path="editproverb/:id" element={<EditProverb />} />
+          <Route path="addmedia" element={<AddMedia />} />
+          <Route path="feedback" element={<FeedBack />} />
+          <Route path="editmedia/:id" element={<EditMedia />} />
         </Route>
       </Routes>
     </Router>
